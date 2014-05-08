@@ -117,4 +117,21 @@
 
   ## {{ Anonymity Distribution specific additions start here
 
+  @{HOME}/.whonix/* rwk,
+
+  /etc/whonix.d/ r,
+  /etc/whonix.d/* r,
+	
+  /etc/hosts.whonix r,
+  /etc/resolv.conf.whonix r,
+	
+  /usr/bin/gpg.whonix rix,
+  /usr/bin/gpg.whonix-orig rix,
+	
+  /usr/lib/whonix/confirm_open rix,
+  /usr/lib/whonix/uwtwrapper rix,
+  /var/lib/whonix/whonixblog/ r,
+
+  /usr/share/whonix/kde/share/config/kdeglobals r,
+
   ## }} Anonymity Distribution specific additions end here
