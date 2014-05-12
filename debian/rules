@@ -6,8 +6,6 @@
 
 export DH_VERBOSE=1
 
-DEB_DISPLACE_EXTENSION = .anondist
-
 %:
 	dh $@ --with=config-package
 
