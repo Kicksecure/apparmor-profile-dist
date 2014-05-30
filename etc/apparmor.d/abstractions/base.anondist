@@ -126,6 +126,7 @@
   /etc/resolv.conf.whonix r,
 
   /usr/bin/gpg.whonix rix,
+  /usr/bin/gpg.whonix-orig rix,
   /usr/bin/gpg.anondist-orig rix,
 
   /usr/lib/whonix/confirm_open rix,
