@@ -122,17 +122,22 @@
   /etc/whonix.d/ r,
   /etc/whonix.d/* r,
 
-  /etc/hosts.whonix r,
-  /etc/resolv.conf.whonix r,
+  /etc/uwt.d/ r,
+  /etc/uwt.d/* r,
 
-  /usr/bin/gpg.whonix rix,
-  /usr/bin/gpg.whonix-orig rix,
+  /etc/hosts.anondist r,
+  /etc/resolv.conf.anondist r,
+
+  /usr/bin/gpg.anondist rix,
+  /usr/bin/gpg.anondist-orig rix,
   /usr/bin/gpg.anondist-orig rix,
 
-  /usr/lib/whonix/confirm_open rix,
-  /usr/lib/whonix/uwtwrapper rix,
+  /usr/lib/open_link_confirmation rix,
+  /usr/lib/uwtwrapper rix,
   /var/lib/whonix/whonixblog/ r,
 
-  /usr/share/whonix/kde/share/config/kdeglobals r,
+  /usr/share/kde-lowfat/share/config/kdeglobals r,
+  /usr/share/kde-mouse-doubleclick/share/config/kdeglobals r,
+  /usr/share/torbrowser-default-browser/share/config/kdeglobals r,
 
   ## }} Anonymity Distribution specific additions end here

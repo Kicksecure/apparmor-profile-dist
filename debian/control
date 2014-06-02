@@ -18,3 +18,9 @@ Depends: ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
 Description: AppArmor profile for Anonymity Linux Distributions
+ Displaces /etc/apparmor.d/abstractions/base with a version, that includes
+ additions required for anonymity linux distributions.
+ .
+ Does not depend on AppArmor, so this packages can be installed by default on
+ any anonymity distribution by default, without requiring to also have AppArmor
+ installed. Just for the case, AppArmor gets installed later by the user.
