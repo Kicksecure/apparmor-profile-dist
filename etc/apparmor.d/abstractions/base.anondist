@@ -139,5 +139,6 @@
   /usr/share/kde-lowfat/share/config/kdeglobals r,
   /usr/share/kde-mouse-doubleclick/share/config/kdeglobals r,
   /usr/share/torbrowser-default-browser/share/config/kdeglobals r,
+  /usr/share/open-link-confirmation/share/config/kdeglobals r,
 
   ## }} Anonymity Distribution specific additions end here
