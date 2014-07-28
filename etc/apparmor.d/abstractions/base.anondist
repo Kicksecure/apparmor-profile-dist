@@ -140,5 +140,8 @@
   /usr/share/kde-mouse-doubleclick/share/config/kdeglobals r,
   /usr/share/torbrowser-default-browser/share/config/kdeglobals r,
   /usr/share/open-link-confirmation/share/config/kdeglobals r,
+  ## required by Okular profile
+  /usr/share/anon-kde-streamiso/share/config/kioslaverc r,
+
 
   ## }} Anonymity Distribution specific additions end here
