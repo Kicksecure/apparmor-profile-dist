@@ -6,7 +6,7 @@ Source: apparmor-profile-anondist
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
-Build-Depends: debhelper (>= 8), dh-apparmor, faketime, config-package-dev (>= 5.1)
+Build-Depends: debhelper (>= 8), faketime, config-package-dev (>= 5.1)
 Homepage: https://www.whonix.org/wiki/AppArmor
 Vcs-Browser: https://github.com/Whonix/apparmor-profile-anondist
 Vcs-Git: https://github.com/Whonix/apparmor-profile-anondist.git
@@ -17,9 +17,9 @@ Architecture: all
 Depends: ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
-Description: AppArmor Profile for Anonymity Linux Distributions
+Description: AppArmor profile for Anonymity Linux Distributions
  Displaces /etc/apparmor.d/abstractions/base with a version, that includes
- additions required for Anonymity Linux Distributions.
+ additions required for Anonymity linux distributions.
  .
  Does not depend on AppArmor, so this package can be installed by default on
  any anonymity distribution by default, without requiring to also have AppArmor
