@@ -142,7 +142,7 @@
   /usr/share/kde-mouse-doubleclick/share/config/kdeglobals r,
   /usr/share/torbrowser-default-browser/share/config/kdeglobals r,
   /usr/share/open-link-confirmation/share/config/kdeglobals r,
-  /usr/share/anon-* r,
+  /usr/share/anon-*/** r,
 
   /var/lib/anon-dist/build_version r,
 
