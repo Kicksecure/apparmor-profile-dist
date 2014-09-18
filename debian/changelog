@@ -1,3 +1,9 @@
+apparmor-profile-anondist (3:0.4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 18 Sep 2014 21:38:31 +0000
+
 apparmor-profile-anondist (3:0.3-1) unstable; urgency=low
 
   * New upstream version.
