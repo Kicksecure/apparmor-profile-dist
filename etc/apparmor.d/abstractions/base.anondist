@@ -145,7 +145,7 @@
   /usr/share/anon-*/** r,
   ## required for /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
   /usr/share/tor/tor-service-defaults-torrc.anondist,
-  /etc/tor/torrc.anondist
+  /etc/tor/torrc.anondist,
 
   /var/lib/anon-dist/build_version r,
 
