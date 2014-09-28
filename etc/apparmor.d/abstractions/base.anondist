@@ -144,8 +144,8 @@
   /usr/share/open-link-confirmation/share/config/kdeglobals r,
   /usr/share/anon-*/** r,
   ## required for /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
-  /usr/share/tor/tor-service-defaults-torrc.anondist,
-  /etc/tor/torrc.anondist,
+  /usr/share/tor/tor-service-defaults-torrc.anondist r,
+  /etc/tor/torrc.anondist r,
 
   /var/lib/anon-dist/build_version r,
 
