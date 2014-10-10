@@ -3,3 +3,4 @@
 ## See the file COPYING for copying conditions.
 
 /etc/apparmor.d/abstractions/base.anondist
+/etc/apparmor.d/abstractions/consoles.anondist
