@@ -1,0 +1,392 @@
+commit 9c0301dc8b2532a6ed78a8efbc7c34a12ddc2a69
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:30 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit 91aead1ad619ab283e20cd8f2a13884d11d06f65
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:36 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit 5fd67d78ba96fb1cf28072bd3fda51b8f8f8348b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 20 21:02:04 2015 +0000
+
+    removed consoles.anondist because we will not be using tlsdate
+
+commit e967a0525880fad4dbcb6f3de19fd6d6d9e16598
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:33:33 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 8db0c80894720212bad68bce340a216d07746165
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:08 2014 +0000
+
+    updated generic makefile
+
+commit a9bf00bbd9e1dd124f2e1fe271f3b5d71ddb03d5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:16 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit e5fbc1a5a5ab8ebfe90b0b07ca1396242113d2f5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:50 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit ca089a68065c16d21b54e18dcbf7f3ba828a58f4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:01 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit cc866ce781f92fdc1905b08ab4fa1c4f7361cd73
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:50 2014 +0000
+
+    readme
+
+commit 0a6a65ad57786da6425e3a35a3de7ba305e70f10
+Merge: 873b1ba 8cf8a0a
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri Oct 10 18:52:50 2014 +0000
+
+    Merge remote-tracking branch 'origin'
+
+commit 873b1baad9e62b718882d4623d7487a5a10625f3
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri Oct 10 18:49:40 2014 +0000
+
+    Revert "Added consoles.anondist"
+    
+    This reverts commit 7aa12d2c7c1c7bde72b2ed579e92f991474545e5.
+
+commit 8cf8a0a9919db547aeef1c38dede02e886cb292a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Oct 10 15:23:49 2014 +0000
+
+    tlsdate profile does not include abstractions/base. Therefore displacing (config-package-dev) abstractions/consoles. Thanks to @troubadoour for the AppArmor profile.
+
+commit 7aa12d2c7c1c7bde72b2ed579e92f991474545e5
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri Oct 10 11:11:13 2014 +0000
+
+    Added consoles.anondist
+
+commit dc56dd04624508fb9e1c6597970db8457fd6ba58
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 28 05:34:22 2014 +0000
+
+    bumped version number
+
+commit 814ec01c4189ea0e897ba066ee3f914aa530f2ae
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 28 05:32:27 2014 +0000
+
+    fix
+
+commit fcbb311a9fcfd7e1cb92479817496b5d36508887
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 28 02:55:47 2014 +0000
+
+    fix
+
+commit 8018efb322275017d4864f3a3285f251e92b8689
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 28 02:55:14 2014 +0000
+
+    added "/etc/tor/torrc.anondist"
+
+commit cf9eb5260973e828a8007b5ff47adc265dc52f18
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Sep 28 02:48:35 2014 +0000
+
+    added "/usr/share/tor/tor-service-defaults-torrc.anondist,", required for /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
+
+commit 352d68d67c1cec6f47b06df8eeeb5ad15e7690d9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 18 21:38:34 2014 +0000
+
+    bumped version number
+
+commit 1dec2092eb0a6c161a4833d124b7c351e299c4dc
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Sep 18 20:59:09 2014 +0000
+
+    read permission to all the /usr/share/anon* files
+
+commit 4a23350b544a26a9934d7daf2c447c27b531dfba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 18:52:35 2014 +0000
+
+    makefile: added new feature "make deb-chl-bumpup" - Bump upstream version number in debian/changelog.
+
+commit db07884dfa620e93b4baf6984b81f9237994b9fa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:54:22 2014 +0000
+
+    Updated debian/changelog.
+
+commit d294502d419b6eca0c3fac0c6a33a48617a40536
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:47:24 2014 +0000
+
+    Fixed changelog date.
+
+commit 4744beadc9bba410a1970fa6c8128b8acd760ca1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 18:03:23 2014 +0000
+
+    bump version number
+
+commit a24bb3f3eacdbc52e2493e77bcf3821b6840b3a0
+Merge: 8e30f29 f2a6420
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 22:25:12 2014 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit f2a64207aac0d0160fb3423f058f724bb1595a82
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Aug 14 19:04:10 2014 +0000
+
+    + dh-apparmor
+
+commit 8e30f2910a7ae565f0a95357f2cd2759361953bd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:35:13 2014 +0000
+
+    Implemented make deb-icup: Combination of make deb-pkg, make deb-pkg-install and make deb-pkg-cleanup.
+
+commit bb7f53f6ff0619598dfe850b922265ab0feed135
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:08:50 2014 +0000
+
+    Revert "-dh-apparmor"
+    
+    This reverts commit 39834997b993ea51f2448aa42afe57b95148a254.
+
+commit e43179ece30d8aafe6128b77f5815b044259c1c0
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Aug 14 08:57:20 2014 +0000
+
+    cosmetic change
+
+commit f44a616c4bf803ac4e918ade3b3f258759cfc643
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Aug 14 08:44:06 2014 +0000
+
+    updates after changes for Whonix 9
+
+commit 39834997b993ea51f2448aa42afe57b95148a254
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Aug 14 05:51:40 2014 +0000
+
+    -dh-apparmor
+
+commit 6233e55874e44fc007465408dd4076af19d7fc33
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 13 23:44:08 2014 +0000
+
+    minor formatting
+
+commit be97613c1f7c5c7147568d759d98d0ba81e8aac7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 28 23:25:41 2014 +0000
+
+    readme
+
+commit 13c276b6cc7ebd8c0cf6106fdfc3562db09a993f
+Author: troubadoour <trobador@riseup.net>
+Date:   Mon Jul 28 21:19:07 2014 +0000
+
+    new line for okular profile
+
+commit 2694866f1326eeded9243fdd997f81e91cd990b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 12:42:24 2014 +0000
+
+    packaging
+
+commit df4d84dea2c98e96890e05c1bad1ff92f0dec313
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 04:01:08 2014 +0000
+
+    packaging
+
+commit ede1ffcb7cb2372412560084a0c11e829826e9b3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:26:34 2014 +0000
+
+    packaging
+
+commit 6394370d7504658576a5b117beee9cafb371624b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:16:01 2014 +0000
+
+    packaging: removed build dependency on git, since the .git folder won't be included in the upstream tarball.
+
+commit 1126a2380979b1083ba8e827dea2931549c6a595
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 12:35:20 2014 +0000
+
+    package description; fix lintian warning
+
+commit e2102afeac760bd936b5eef5563c1a2b06589487
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jul 22 19:45:46 2014 +0000
+
+    added dh-apparmor to build dependencies
+
+commit 7a8dc23b5c7c60cf51225942103a9a5832310d95
+Author: troubadoour <trobador@riseup.net>
+Date:   Tue Jul 22 15:51:46 2014 +0000
+
+    open-link-confirmation
+
+commit e79d757ac477f77d88228c1466af6ea0bcd26453
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 17:10:59 2014 +0000
+
+    packaging
+
+commit 63a77e6d336cc89ac215aafa1eb050ce8d488148
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:34:14 2014 +0000
+
+    packaging
+
+commit b9e11371527953952c5066726f2f028f12b9533d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 5 08:09:41 2014 +0000
+
+    Bumped debian revision number to avoid lintian warning "new-package-should-close-itp-bug" so we can use lintian --fail-on-warnings as sanity test.
+
+commit 2059e39db53ce6b94c7b587cbe8b11951dc738db
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 30 11:13:26 2014 +0000
+
+    readme
+
+commit 3493aeaeadbb8d712b0d1e1c95d8e9d48858d61b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 15:45:10 2014 +0000
+
+    added debian epoch; added dotglob
+
+commit a28d4fbc76ff153b054f5b40571850fa6ddb695e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 17 22:58:10 2014 +0000
+
+    deactivate verbose output
+
+commit 7c4cd0cb12d111b6293357aefcca8d6157a36896
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jun 12 14:30:46 2014 +0000
+
+    typo
+
+commit f4035f85d06816bd840a5ffa025bbb0305b3cd74
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 3 18:27:23 2014 +0000
+
+    readme
+
+commit 954779735a7bfab13b093674cafc71877a4635d5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 2 14:35:45 2014 +0000
+
+    adjusted paths for Whonix 9; package description
+
+commit 1322884f4fce9146d9261723377af91c8c46bd53
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:38:29 2014 +0000
+
+    readme
+
+commit f46501124cabb05dfcb0e17be1da31270aa8aa84
+Author: troubadoour <trobador@riseup.net>
+Date:   Fri May 30 22:03:59 2014 +0000
+
+    /usr/bin/gpg.whonix-orig
+
+commit 5ba2aa18a22557789b62cf5d9addd56c814bbce7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu May 29 22:22:55 2014 +0000
+
+    packaging
+
+commit 2f3b9c56d984fe11e8cd86633beab24962b18ab9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu May 22 23:22:41 2014 +0000
+
+    packaging
+
+commit aa2433805cc38c03f30123155c3f07a7425c8589
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 16 14:56:10 2014 +0000
+
+    removed extra spaces
+
+commit e02607a2d3dedc445cdd93b91369ee7541050004
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 16 14:54:16 2014 +0000
+
+    removed obsolete file
+
+commit 3b5733501380356194f525ebf11a723fc9137e0d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 16 14:53:06 2014 +0000
+
+    removed obsolete file
+
+commit 35eb88f682e15c53c3a4d34277c0427bd3a59826
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue May 13 01:10:49 2014 +0200
+
+    packaging fixes
+
+commit a6cfff05f21780304906b7535717ae1b1d83919e
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu May 8 20:09:46 2014 +0000
+
+    Squashed commit of the following:
+    
+    commit 1e52c01ff41e353dc66e3d969ec818b7eecaaee0
+    Author: troubadoour <trobador@riseup.net>
+    Date:   Thu May 8 20:07:59 2014 +0000
+    
+        etc/apparmor.d/abstractions/base.anondist
+    
+    etc/apparmor.d/abstractions/base.anondist
+
+commit 9f8095dcda7c1b340b3c89e03fbce3147ef66658
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed May 7 23:09:15 2014 +0000
+
+    newline
+
+commit a352943c2eadd5f26404b2dc6a475d186cb27dbe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed May 7 23:06:06 2014 +0000
+
+    changed displace extension from .apparmor to .anondist, thanks to http://mailman.mit.edu/pipermail/config-package-dev/2014-May/000018.html
+
+commit 0dc93302853583b825b5976a23dc248dda608c4d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon May 5 22:39:38 2014 +0000
+
+    initial commit
