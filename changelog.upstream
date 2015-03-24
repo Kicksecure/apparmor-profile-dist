@@ -1,3 +1,46 @@
+commit d9ec665e1c4315a26e139029956dd1220a0c1a86
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 17:26:24 2015 +0000
+
+    updated makefile generic to version 1.4
+
+commit 7b4c6566b1030891d7bf757f3c50d2b3e91154dc
+Merge: db494c7 fd383a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 22 18:19:45 2015 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit fd383a94900a954016b26011d268f7f5b9520ba7
+Author: troubadoour <trobador@riseup.net>
+Date:   Sat Feb 21 20:08:06 2015 +0000
+
+    remove sdwdate
+
+commit 0d82ef5d6fd9e20bf5a9d828be27550e03a59b54
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Feb 19 21:16:52 2015 +0000
+
+    add sdwdate
+
+commit f2f74b33bbc771a80d5f1c6197dcce17fd79d3ca
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Feb 19 21:14:26 2015 +0000
+
+    rename whonix -> sdwdate
+
+commit 55f5a8256a1a630a675dce004df0f22746b603dd
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Feb 18 05:02:58 2015 +0000
+
+    abstractions/whonix used by sdwdate, timesync, whonixcheck profiles
+
+commit db494c7aff06fb7a4b4483d7b3c449f67bea5534
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:56:07 2015 +0000
+
+    bumped changelog version
+
 commit 4b8025cfe10117f607cc1d78c7928b35c46bd493
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Feb 4 00:44:43 2015 +0000
