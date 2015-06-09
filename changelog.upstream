@@ -1,3 +1,22 @@
+commit 571728f9e84192280d0f88556a00ee6708d3f504
+Merge: 05097c2 fbf9542
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 9 20:39:55 2015 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit fbf9542507b998751a4f727d7f90307c47ed831a
+Author: troubadour <trobador@riseup.net>
+Date:   Tue Jun 9 19:56:50 2015 +0000
+
+    list all executables in /usr/lib/anon-shared-helper-scripts/
+
+commit 05097c2a084d5d4b905d3df2ea736dd4f8e69e9a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 3 14:59:22 2015 +0000
+
+    bumped changelog version
+
 commit 71460d35186cda73916bbbb5c9983411f25c7ab2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 30 17:56:01 2015 +0000
