@@ -115,7 +115,7 @@
   # new-style encrypted $HOME
   owner @{HOMEDIRS}/.ecryptfs/*/.Private/** mrixwlk,
 
-  ## {{{ Anonymity Distribution specific additions start here
+  ## {{ Anonymity Distribution specific additions start here
 
   @{HOME}/.whonix/* rwk,
 
@@ -160,12 +160,4 @@
 
   /var/lib/anon-dist/build_version r,
 
-  ## {{ Qubes-Whonix specific start here
-
-  ## Required for obfsproxy.
-  ## https://phabricator.whonix.org/T396
-  /rw/usrlocal/lib/python*/** r,
-
-  ## }} Qubes-Whonix specific end here
-
-  ## }}} Anonymity Distribution specific additions end here
+  ## }} Anonymity Distribution specific additions end here
