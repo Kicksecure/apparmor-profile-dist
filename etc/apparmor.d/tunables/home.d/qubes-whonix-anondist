@@ -1,0 +1,10 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+## In Qubes, /usr/local is a symlink to /rw/usrlocal.
+## AppArmor will not support symlinks:
+## https://bugs.launchpad.net/apparmor/+bug/1485055
+## Fixes 'Qubes-Whonix obfsproxy AppArmor issue':
+## https://phabricator.whonix.org/T396
+alias /usr/local -> /rw/usrlocal/,
