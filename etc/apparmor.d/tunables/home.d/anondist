@@ -1,0 +1,88 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+## {{{ uwt wrapper
+
+alias /usr/bin/apt-get -> /usr/bin/apt-get.anondist,
+alias /usr/bin/apt-get -> /usr/bin/apt-get.anondist-orig,
+
+alias /usr/bin/aptitude -> /usr/bin/aptitude.anondist,
+alias /usr/bin/aptitude -> /usr/bin/aptitude.anondist-orig,
+
+alias /usr/bin/curl -> /usr/bin/curl.anondist,
+alias /usr/bin/curl -> /usr/bin/curl.anondist-orig,
+
+alias /usr/bin/git -> /usr/bin/git.anondist,
+alias /usr/bin/git -> /usr/bin/git.anondist-orig,
+
+alias /usr/bin/gpg -> /usr/bin/gpg.anondist,
+alias /usr/bin/gpg -> /usr/bin/gpg.anondist-orig,
+
+alias /usr/bin/mixmaster-update -> /usr/bin/mixmaster-update.anondist,
+alias /usr/bin/mixmaster-update -> /usr/bin/mixmaster-update.anondist-orig,
+
+alias /usr/bin/rawdog -> /usr/bin/rawdog.anondist,
+alias /usr/bin/rawdog -> /usr/bin/rawdog.anondist-orig,
+
+alias /usr/bin/ssh -> /usr/bin/ssh.anondist,
+alias /usr/bin/ssh -> /usr/bin/ssh.anondist-orig,
+
+alias /usr/bin/wget -> /usr/bin/wget.anondist,
+alias /usr/bin/wget -> /usr/bin/wget.anondist-orig,
+
+## }}}
+
+## {{{ anon-base-files
+alias /etc/hosts -> /etc/hosts.anondist,
+alias /etc/hosts -> /etc/hosts.anondist-orig,
+## }}}
+
+## {{{ anon-[gw|ws]-dns-conf
+alias /etc/resolv.conf -> /etc/resolv.conf.anondist,
+alias /etc/resolv.conf -> /etc/resolv.conf.anondist-orig,
+## }}}
+
+## {{{ timezone-utc
+
+alias /etc/timezone -> /etc/timezone.anondist,
+alias /etc/timezone -> /etc/timezone.anondist-orig,
+
+alias /etc/localtime -> /etc/localtime.anondist,
+alias /etc/localtime -> /etc/localtime.anondist-orig,
+
+## }}}
+
+## {{{ anon-shared-helper-scripts /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
+
+alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist,
+alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist-orig,
+
+alias /etc/tor/torrc -> /etc/tor/torrc.anondist,
+alias /etc/tor/torrc -> /etc/tor/torrc.anondist-orig,
+
+## }}}
+
+## {{{ anon-ws-disable-stacked-tor
+
+alias /etc/default/tor -> /etc/default/tor.anondist,
+alias /etc/default/tor -> /etc/default/tor.anondist-orig,
+
+alias /etc/rinetd.conf -> /etc/rinetd.conf.anondist,
+alias /etc/rinetd.conf -> /etc/rinetd.conf.anondist-orig,
+
+alias /usr/bin/tor -> /usr/bin/tor.anondist,
+alias /usr/bin/tor -> /usr/bin/tor.anondist-orig,
+
+alias /usr/sbin/tor -> /usr/sbin/tor.anondist,
+alias /usr/sbin/tor -> /usr/sbin/tor.anondist-orig,
+
+alias /etc/init.d/tor -> /etc/init.d/tor.anondist,
+alias /etc/init.d/tor -> /etc/init.d/tor.anondist-orig,
+
+## }}}
+
+## {{{ apparmor-profile-anondist
+alias /etc/apparmor.d/abstractions/base -> /etc/apparmor.d/abstractions/base.anondist,
+alias /etc/apparmor.d/abstractions/base -> /etc/apparmor.d/abstractions/base.anondist-orig,
+## }}}
