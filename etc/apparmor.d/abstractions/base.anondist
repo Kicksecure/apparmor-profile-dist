@@ -150,4 +150,11 @@
 
   /var/lib/anon-dist/build_version r,
 
+  ## Qubes specific
+  /usr/bin/dbus-launch rix,
+  /etc/machine-id r,
+  /var/lib/dbus/ r,
+  /var/lib/dbus/machine-id rwk,
+  /var/lib/dbus/machine-id.* rwk,
+
   ## }} Anonymity Distribution specific additions end here
