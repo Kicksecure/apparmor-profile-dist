@@ -1,3 +1,41 @@
+commit 73059be620f44b78150b7008b10c53cfc17c8f08
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 24 15:33:26 2015 +0000
+
+    Qubes specific fixes
+
+commit ad9af43077e907e5c68e8f2508392e1c74663d06
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 20 22:29:24 2015 +0000
+
+    refactoring, use AppArmor's 'alias' mechanism, ship /etc/apparmor.d/tunables/home.d/anondist instead of using /etc/apparmor.d/abstractions/base, so uwt does not break any third party AppArmor profiles
+
+commit 8785d3124c75dc39c6da2f1753e19b02d625a987
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 19 17:38:29 2015 +0000
+
+    fixed obfsproxy AppArmor issue "OSError: [Errno 13] Permission denied: '/rw/usrlocal/lib/python2.7/dist-packages'" using superior /etc/apparmor.d/tunables/home.d/qubes-whonix-anondist solution - https://phabricator.whonix.org/T396
+
+commit da380cfe87c53aab16c9c4a60ccb396752a5b3c6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 19 17:33:39 2015 +0000
+
+    Revert "fixed obfsproxy AppArmor issue "OSError: [Errno 13] Permission denied: '/rw/usrlocal/lib/python2.7/dist-packages'" - https://phabricator.whonix.org/T396"
+    
+    This reverts commit d8a5faec3a71a52b5dab79e092dcbaeeb99c6f7d.
+
+commit d8a5faec3a71a52b5dab79e092dcbaeeb99c6f7d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Aug 14 18:46:11 2015 +0200
+
+    fixed obfsproxy AppArmor issue "OSError: [Errno 13] Permission denied: '/rw/usrlocal/lib/python2.7/dist-packages'" - https://phabricator.whonix.org/T396
+
+commit 01a7c32727031eaf8571771b61188813cb15c248
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 9 20:40:19 2015 +0000
+
+    bumped changelog version
+
 commit 571728f9e84192280d0f88556a00ee6708d3f504
 Merge: 05097c2 fbf9542
 Author: Patrick Schleizer <adrelanos@riseup.net>
