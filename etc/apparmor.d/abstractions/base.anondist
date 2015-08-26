@@ -125,6 +125,10 @@
   /etc/uwt.d/ r,
   /etc/uwt.d/* r,
 
+  ## uwt
+  /bin/mkdir rix,
+  /usr/bin/whoami rix,
+
   /usr/lib/open_link_confirmation rix,
   /usr/lib/uwtwrapper rix,
   /var/lib/whonix/whonixblog/ r,
