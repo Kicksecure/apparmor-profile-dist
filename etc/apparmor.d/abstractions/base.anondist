@@ -48,8 +48,8 @@
   /lib{,32,64}/ld{,32,64}-*.so   mrix,
   /lib{,32,64}/**/ld{,32,64}-*.so     mrix,
   /lib/@{multiarch}/ld{,32,64}-*.so    mrix,
-  /lib/tls/i686/{cmov,nosegneg}/ld-*.so     mrix,
-  /lib/i386-linux-gnu/tls/i686/{cmov,nosegneg}/ld-*.so     mrix,
+  /lib/tls/*/{cmov,nosegneg}/ld-*.so     mrix,
+  /lib/*-linux-gnu/tls/*/{cmov,nosegneg}/ld-*.so     mrix,
   /opt/*-linux-uclibc/lib/ld-uClibc*so* mrix,
 
   # we might as well allow everything to use common libraries
@@ -65,8 +65,8 @@
   /usr/lib/@{multiarch}/**          r,
   /usr/lib/@{multiarch}/lib*.so*    mr,
   /usr/lib/@{multiarch}/**/lib*.so* mr,
-  /lib/tls/i686/{cmov,nosegneg}/lib*.so*    mr,
-  /lib/i386-linux-gnu/tls/i686/{cmov,nosegneg}/lib*.so*    mr,
+  /lib/tls/*/{cmov,nosegneg}/lib*.so*    mr,
+  /lib/*-linux-gnu/tls/*/{cmov,nosegneg}/lib*.so*    mr,
 
   # /dev/null is pretty harmless and frequently used
   /dev/null                      rw,
