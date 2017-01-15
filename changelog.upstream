@@ -1,3 +1,35 @@
+commit 8b3fcf5fe575cbb28d9053c22b7187d92c10ed5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 08:35:27 2017 +0100
+
+    packaging, bumped Standards-Version from 3.9.6 to 3.9.8 for jessie support
+
+commit ad093eab063a6430ee714bf463fcd2c78c52c750
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:49:08 2017 +0000
+
+    merge /etc/apparmor.d/abstractions/base.anondist from Debian stretch
+
+commit c4c17ab34d2c648d908017fbd489d27154189894
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 06:40:36 2017 +0000
+
+    add missing aliases for
+    
+    yumdownloader
+    
+    onionshare
+    
+    onionshare-gui
+    
+    ricochet
+
+commit 31f841fc07e9c311a32f5bed4bae83b08db2be12
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 10 00:13:55 2016 +0000
+
+    bumped changelog version
+
 commit f9a904ec38123584536dfef053bb901b2db908d1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 21 17:39:19 2016 +0000
