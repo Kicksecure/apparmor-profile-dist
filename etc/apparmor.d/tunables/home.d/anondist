@@ -31,6 +31,21 @@ alias /usr/bin/ssh -> /usr/bin/ssh.anondist-orig,
 alias /usr/bin/wget -> /usr/bin/wget.anondist,
 alias /usr/bin/wget -> /usr/bin/wget.anondist-orig,
 
+alias /usr/bin/yum -> /usr/bin/yum.anondist,
+alias /usr/bin/yum -> /usr/bin/yum.anondist-orig,
+
+alias /usr/bin/yumdownloader -> /usr/bin/yumdownloader.anondist,
+alias /usr/bin/yumdownloader -> /usr/bin/yumdownloader.anondist-orig,
+
+alias /usr/bin/onionshare -> /usr/bin/onionshare.anondist,
+alias /usr/bin/onionshare -> /usr/bin/onionshare.anondist-orig,
+
+alias /usr/bin/onionshare-gui -> /usr/bin/onionshare-gui.anondist,
+alias /usr/bin/onionshare-gui -> /usr/bin/onionshare-gui.anondist-orig,
+
+alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist,
+alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist-orig,
+
 ## }}}
 
 ## {{{ anon-base-files
