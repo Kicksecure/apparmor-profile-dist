@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 9), faketime, genmkfile, dh-apparmor, config-packag
 Homepage: https://www.whonix.org/wiki/AppArmor
 Vcs-Browser: https://github.com/Whonix/apparmor-profile-anondist
 Vcs-Git: https://github.com/Whonix/apparmor-profile-anondist.git
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 
 Package: apparmor-profile-anondist
 Architecture: all
