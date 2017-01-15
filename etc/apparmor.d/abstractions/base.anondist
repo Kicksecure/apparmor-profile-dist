@@ -26,6 +26,7 @@
   /etc/locale/**                 r,
   /etc/locale.alias              r,
   /etc/localtime                 r,
+  /etc/writable/localtime        r,
   /usr/share/locale-langpack/**  r,
   /usr/share/locale/**           r,
   /usr/share/**/locale/**        r,
@@ -89,7 +90,7 @@
   /sys/devices/system/cpu/online r,
 
   # glibc's *printf protections read the maps file
-  @{PROC}/*/maps                 r,
+  @{PROC}/@{pid}/maps            r,
 
   # libgcrypt reads some flags from /proc
   @{PROC}/sys/crypto/*           r,
@@ -99,6 +100,47 @@
 
   # glibc statvfs
   @{PROC}/filesystems            r,
+
+  # glibc malloc (man 5 proc)
+  @{PROC}/sys/vm/overcommit_memory r,
+
+  # Allow determining the highest valid capability of the running kernel
+  @{PROC}/sys/kernel/cap_last_cap r,
+
+  # Allow other processes to read our /proc entries, futexes, perf tracing and
+  # kcmp for now (they will need 'read' in the first place). Administrators can
+  # override with:
+  #   deny ptrace (readby) ...
+  ptrace (readby),
+
+  # Allow other processes to trace us by default (they will need 'trace' in
+  # the first place). Administrators can override with:
+  #   deny ptrace (tracedby) ...
+  ptrace (tracedby),
+
+  # Allow us to ptrace read ourselves
+  ptrace (read) peer=@{profile_name},
+
+  # Allow unconfined processes to send us signals by default
+  signal (receive) peer=unconfined,
+
+  # Allow us to signal ourselves
+  signal peer=@{profile_name},
+
+  # Checking for PID existence is quite common so add it by default for now
+  signal (receive, send) set=("exists"),
+
+  # Allow us to create and use abstract and anonymous sockets
+  unix peer=(label=@{profile_name}),
+
+  # Allow unconfined processes to us via unix sockets
+  unix (receive) peer=(label=unconfined),
+
+  # Allow us to create abstract and anonymous sockets
+  unix (create),
+
+  # Allow us to getattr, getopt, setop and shutdown on unix sockets
+  unix (getattr, getopt, setopt, shutdown),
 
   # Workaround https://launchpad.net/bugs/359338 until upstream handles stacked
   # filesystems generally. This does not appreciably decrease security with
