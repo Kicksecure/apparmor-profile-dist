@@ -1,3 +1,16 @@
+commit eaa257bcd676d23fa50de27e7b56ca929140e904
+Author: troubadoour <trobador@riseup.net>
+Date:   Sat Dec 5 20:52:54 2015 +0000
+
+    + /etc/timezone.anondist r,
+    related to iceowl-extension
+
+commit f5afeceb81f84b237b18973c54ff90ee5be3b8f7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 13:46:58 2017 +0000
+
+    bumped changelog version
+
 commit 298a6ad4e7ab0aa7a755f4c55a60e16ffd81c2a0
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:49 2017 +0000
