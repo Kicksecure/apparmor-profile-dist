@@ -166,7 +166,7 @@
 
   /etc/uwt.d/ r,
   /etc/uwt.d/* r,
-  
+
   /etc/timezone.anondist r,
 
   ## uwt
@@ -175,6 +175,7 @@
 
   /usr/lib/open_link_confirmation rix,
   /usr/lib/uwtwrapper rix,
+  /usr/lib/uwtexec rix,
   /var/lib/whonix/whonixblog/ r,
 
   /usr/lib/anon-shared-helper-scripts/anondate rix,
