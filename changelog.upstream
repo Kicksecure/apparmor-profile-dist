@@ -1,3 +1,15 @@
+commit 595caa24e1482165976bbbe7546217237bc376a1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 6 07:00:16 2018 +0000
+
+    /etc/dpkg/origins/whonix r,
+
+commit 0cb90945c17036a635667489e728b3ee281bff3a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 6 06:57:09 2018 +0000
+
+    bumped changelog version
+
 commit 4500f78b3dcba86297020de1cd2746442686f091
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jul 6 14:15:55 2018 +0800
