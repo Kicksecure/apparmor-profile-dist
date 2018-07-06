@@ -171,6 +171,7 @@
 
   ## uwt
   /bin/mkdir rix,
+  /bin/readlink rix,
   /usr/bin/whoami rix,
 
   /usr/lib/open_link_confirmation rix,
