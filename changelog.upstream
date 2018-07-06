@@ -1,3 +1,15 @@
+commit 4500f78b3dcba86297020de1cd2746442686f091
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 6 14:15:55 2018 +0800
+
+    /bin/readlink rix,
+
+commit d790a4e9e86f117de30d431d56f8122a2db6df1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jun 22 02:24:11 2018 +0000
+
+    bumped changelog version
+
 commit 4862c3be2ffb4f77962b2a57e0871261c21b7a64
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jun 22 09:59:50 2018 +0800
