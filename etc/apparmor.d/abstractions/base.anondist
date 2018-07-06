@@ -169,6 +169,8 @@
 
   /etc/timezone.anondist r,
 
+  /etc/dpkg/origins/whonix r,
+
   ## uwt
   /bin/mkdir rix,
   /bin/readlink rix,
