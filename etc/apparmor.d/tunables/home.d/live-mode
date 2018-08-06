@@ -1,0 +1,8 @@
+## Copyright (C) 2018 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2018 Algernon <33966997+Algernon-01@users.noreply.github.com>
+## See the file COPYING for copying conditions.
+
+@{HOMEDIRS}+=/rw/home/
+alias / -> /rw/,
+alias /var/lib/ -> /rw/var/lib/,
+alias /var/lib/tor/ -> /rw/var/lib/tor/,
