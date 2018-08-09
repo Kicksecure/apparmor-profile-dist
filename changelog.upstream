@@ -1,3 +1,31 @@
+commit 632c12ca5fada0f65dae5385837bbe712f7a6253
+Merge: b1c5a0d 3590cfc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 6 16:22:09 2018 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 3590cfc6bfb63061dd897e83888ee526b9eb2f90
+Merge: b1c5a0d 07d3bd9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 27 21:31:17 2018 +0800
+
+    Merge pull request #1 from Algernon-01/master
+    
+    Merges apparmor alias for ro-mode-init and grub-live into apparmor-profile-anondist
+
+commit 07d3bd950ce48a963ea4c6aaca56e7fde000a056
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Fri Jul 27 12:50:25 2018 +0000
+
+    Fixes for Whonix live-mode (apparmor + overlayfs). See https://bugs.launchpad.net/apparmor/+bug/888077
+
+commit b1c5a0d84097a97aa0bba92ffeec1e996812f30b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 6 07:04:48 2018 +0000
+
+    bumped changelog version
+
 commit 595caa24e1482165976bbbe7546217237bc376a1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jul 6 07:00:16 2018 +0000
