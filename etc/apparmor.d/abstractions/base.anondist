@@ -27,12 +27,20 @@
   /etc/locale.alias              r,
   /etc/localtime                 r,
   /etc/writable/localtime        r,
+  /usr/share/locale-bundle/**    r,
   /usr/share/locale-langpack/**  r,
   /usr/share/locale/**           r,
   /usr/share/**/locale/**        r,
   /usr/share/zoneinfo/           r,
   /usr/share/zoneinfo/**         r,
   /usr/share/X11/locale/**       r,
+  /run/systemd/journal/dev-log w,
+  # systemd native journal API (see sd_journal_print(4))
+  /run/systemd/journal/socket w,
+  # Nested containers and anything using systemd-cat need this. 'r' shouldn't
+  # be required but applications fail without it. journald doesn't leak
+  # anything when reading so this is ok.
+  /run/systemd/journal/stdout rw,
 
   /usr/lib{,32,64}/locale/**             mr,
   /usr/lib{,32,64}/gconv/*.so            mr,
@@ -46,28 +54,22 @@
   # ld.so.cache and ld are used to load shared libraries; they are best
   # available everywhere
   /etc/ld.so.cache               mr,
-  /lib{,32,64}/ld{,32,64}-*.so   mrix,
-  /lib{,32,64}/**/ld{,32,64}-*.so     mrix,
-  /lib/@{multiarch}/ld{,32,64}-*.so    mrix,
-  /lib/tls/*/{cmov,nosegneg}/ld-*.so     mrix,
-  /lib/*-linux-gnu/tls/*/{cmov,nosegneg}/ld-*.so     mrix,
-  /opt/*-linux-uclibc/lib/ld-uClibc*so* mrix,
+  /etc/ld.so.conf                r,
+  /etc/ld.so.conf.d/{,*.conf}    r,
+  /etc/ld.so.preload             r,
+  /{usr/,}lib{,32,64}/ld{,32,64}-*.so   mr,
+  /{usr/,}lib/@{multiarch}/ld{,32,64}-*.so    mr,
+  /{usr/,}lib/tls/i686/{cmov,nosegneg}/ld-*.so     mr,
+  /{usr/,}lib/i386-linux-gnu/tls/i686/{cmov,nosegneg}/ld-*.so     mr,
+  /opt/*-linux-uclibc/lib/ld-uClibc*so* mr,
 
   # we might as well allow everything to use common libraries
-  /lib{,32,64}/**                r,
-  /lib{,32,64}/lib*.so*          mr,
-  /lib{,32,64}/**/lib*.so*       mr,
-  /lib/@{multiarch}/**            r,
-  /lib/@{multiarch}/lib*.so*      mr,
-  /lib/@{multiarch}/**/lib*.so*   mr,
-  /usr/lib{,32,64}/**            r,
-  /usr/lib{,32,64}/*.so*         mr,
-  /usr/lib{,32,64}/**/lib*.so*   mr,
-  /usr/lib/@{multiarch}/**          r,
-  /usr/lib/@{multiarch}/lib*.so*    mr,
-  /usr/lib/@{multiarch}/**/lib*.so* mr,
-  /lib/tls/*/{cmov,nosegneg}/lib*.so*    mr,
-  /lib/*-linux-gnu/tls/*/{cmov,nosegneg}/lib*.so*    mr,
+  /{usr/,}lib{,32,64}/**                r,
+  /{usr/,}lib{,32,64}/**.so*       mr,
+  /{usr/,}lib/@{multiarch}/**            r,
+  /{usr/,}lib/@{multiarch}/**.so*   mr,
+  /{usr/,}lib/tls/i686/{cmov,nosegneg}/*.so*    mr,
+  /{usr/,}lib/i386-linux-gnu/tls/i686/{cmov,nosegneg}/*.so*    mr,
 
   # /dev/null is pretty harmless and frequently used
   /dev/null                      rw,
@@ -87,10 +89,11 @@
   @{PROC}/meminfo                r,
   @{PROC}/stat                   r,
   @{PROC}/cpuinfo                r,
-  /sys/devices/system/cpu/online r,
+  @{sys}/devices/system/cpu/       r,
+  @{sys}/devices/system/cpu/online r,
 
   # glibc's *printf protections read the maps file
-  @{PROC}/@{pid}/maps            r,
+  @{PROC}/@{pid}/{maps,auxv,status} r,
 
   # libgcrypt reads some flags from /proc
   @{PROC}/sys/crypto/*           r,
