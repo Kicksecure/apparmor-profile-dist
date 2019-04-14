@@ -42,8 +42,8 @@ alias /usr/bin/onionshare -> /usr/bin/onionshare.anondist-orig,
 alias /usr/bin/onionshare-gui -> /usr/bin/onionshare-gui.anondist,
 alias /usr/bin/onionshare-gui -> /usr/bin/onionshare-gui.anondist-orig,
 
-alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist,
-alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist-orig,
+#alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist,
+#alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist-orig,
 
 ## }}}
 
