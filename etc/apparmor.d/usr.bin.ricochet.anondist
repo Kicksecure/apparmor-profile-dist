@@ -63,6 +63,7 @@
 ## https://forums.whonix.org/t/whonix-virtualbox-15-0-0-0-7-debian-buster-based-testers-wanted/7131/4
 ## https://github.com/ricochet-im/ricochet/pull/597
 ## https://github.com/ricochet-im/ricochet/pull/598
+## https://github.com/ricochet-im/ricochet/pull/599
    #include <abstractions/base>
    /usr/bin/ricochet.anondist-orig rix,
 
