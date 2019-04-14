@@ -1,3 +1,15 @@
+commit cff691774c7e019f3e7d2557c7f46d0b3f18aef0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 14 12:07:25 2019 +0000
+
+    ricochet apparmor fix
+
+commit 7e3265fb2d7494444d25fce61b49413550911d1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 16:08:44 2019 +0000
+
+    bumped changelog version
+
 commit 668cea6e825d433569283be2840d8c1147c548e5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 14:34:01 2019 +0000
