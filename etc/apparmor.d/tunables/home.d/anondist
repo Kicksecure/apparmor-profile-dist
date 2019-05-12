@@ -67,7 +67,7 @@ alias /etc/localtime -> /etc/localtime.anondist-orig,
 
 ## }}}
 
-## {{{ anon-shared-helper-scripts /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
+## {{{ helper-scripts /usr/lib/helper-scripts/te_pe_tb_check
 
 alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist,
 alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist-orig,

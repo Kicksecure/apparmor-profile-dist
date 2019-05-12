@@ -382,7 +382,7 @@ commit fbf9542507b998751a4f727d7f90307c47ed831a
 Author: troubadour <trobador@riseup.net>
 Date:   Tue Jun 9 19:56:50 2015 +0000
 
-    list all executables in /usr/lib/anon-shared-helper-scripts/
+    list all executables in /usr/lib/helper-scripts/
 
 commit 05097c2a084d5d4b905d3df2ea736dd4f8e69e9a
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -603,7 +603,7 @@ commit cf9eb5260973e828a8007b5ff47adc265dc52f18
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Sep 28 02:48:35 2014 +0000
 
-    added "/usr/share/tor/tor-service-defaults-torrc.anondist,", required for /usr/lib/anon-shared-helper-scripts/te_pe_tb_check
+    added "/usr/share/tor/tor-service-defaults-torrc.anondist,", required for /usr/lib/helper-scripts/te_pe_tb_check
 
 commit 352d68d67c1cec6f47b06df8eeeb5ad15e7690d9
 Author: Patrick Schleizer <adrelanos@riseup.net>
