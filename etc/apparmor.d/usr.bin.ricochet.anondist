@@ -58,6 +58,7 @@
   # Why does it need this stuff? BAD NEWS BEARS
   /etc/machine-id r,
   /var/lib/dbus/machine-id r,
+  /proc/sys/kernel/random/boot_id r,
 
 ## uwt apparmor issue workaround
 ## https://forums.whonix.org/t/whonix-virtualbox-15-0-0-0-7-debian-buster-based-testers-wanted/7131/4
@@ -68,7 +69,7 @@
    /usr/bin/ricochet.anondist-orig rix,
 
   owner @{HOME}/.local/share/Ricochet/ rw,
-  owner @{HOME}/.local/share/Ricochet/** mrwk,
+  owner @{HOME}/.local/share/Ricochet/** mrwkl,
   owner @{HOME}/.cache/Ricochet/ rw,
-  owner @{HOME}/.cache/Ricochet/** mrwk,
+  owner @{HOME}/.cache/Ricochet/** mrwkl,
 }
