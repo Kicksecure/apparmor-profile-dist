@@ -1,3 +1,31 @@
+commit 2d089dc6451aa58f81a62ef4cc5487c6d71ca0cb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 1 09:07:49 2019 +0000
+
+    Crude workaround for the following issue.
+    
+    sudo aa-enforce /etc/apparmor.d/usr.bin.ricochet
+    
+    ERROR: Conflicting profiles for /usr/bin/ricochet defined in two files:
+    - /etc/apparmor.d/usr.bin.ricochet
+    - /etc/apparmor.d/usr.bin.ricochet.anondist-orig
+
+commit 6f2cdd31e23edb9bc21019d5cd017e53fad7c75a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 1 08:58:12 2019 +0000
+
+    ricochet apparmor profile fixes
+    
+    thanks to @HulaHoopWhonix for the bug report!
+    
+    https://forums.whonix.org/t/ricochet-support/7174/34
+
+commit 90932ff35291f608583ee7f70ba7cc208806bf81
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 24 20:11:03 2019 +0000
+
+    bumped changelog version
+
 commit 524496e0bdcac6e0aac8e91f17148884b2390292
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 24 12:28:55 2019 -0400
