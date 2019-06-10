@@ -1,3 +1,23 @@
+commit f9c06a621fb6beeeb0829e992e3b599c63090986
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 10 17:52:31 2019 +0000
+
+    rename back previously file renamed by mistake
+    
+    caused apparmor error
+    
+    renamed:    debian/apparmor-profile-anondist.undisplace -> debian/apparmor-profile-anondist.displace
+    
+    thanks to @TNTBOMBOM for the bug report!
+    
+    http://forums.whonix.org/t/whonix-virtualbox-15-0-0-0-7-debian-buster-based-testers-wanted/7131/26
+
+commit 083b6c2081501ce772d53d54b82619912315a749
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 10 15:40:42 2019 +0000
+
+    bumped changelog version
+
 commit 5cf7fe167a2a2ebf960648f7d426d99cbf256fc4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jun 10 15:00:33 2019 +0000
