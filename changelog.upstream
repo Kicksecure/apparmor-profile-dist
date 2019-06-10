@@ -1,3 +1,15 @@
+commit 5cf7fe167a2a2ebf960648f7d426d99cbf256fc4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 10 15:00:33 2019 +0000
+
+    remove ricochet apparmor profile
+
+commit 28a4607b722bd8f70b4c9154d10e30adbe0137ab
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 8 10:14:23 2019 +0000
+
+    bumped changelog version
+
 commit 68ca13a2db2b8ff3f5dbb5fbe8bc9422119d83e1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jun 8 00:05:30 2019 -0400
