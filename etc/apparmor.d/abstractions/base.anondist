@@ -177,12 +177,16 @@
   ## uwt
   /bin/mkdir rix,
   /bin/readlink rix,
+  /bin/bash rix,
+  /bin/grep rix,
+
+  ## uwt
   /usr/bin/whoami rix,
   /usr/bin/basename rix,
-  /bin/bash rix,
-  /dev/tty rw,
   /sbin/ifconfig rix,
-  /bin/grep rix,
+
+  ## uwt
+  /dev/tty rw,
   @{PROC}/[0-9]*/net/ r,
   @{PROC}/[0-9]*/net/** r,
   /usr/lib/uwtexec rix,
