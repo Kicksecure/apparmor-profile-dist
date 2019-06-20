@@ -181,6 +181,12 @@
   /bin/grep rix,
 
   ## uwt
+  /usr/bin/mkdir rix,
+  /usr/bin/readlink rix,
+  /usr/bin/bash rix,
+  /usr/bin/grep rix,
+
+  ## uwt
   /usr/bin/whoami rix,
   /usr/bin/basename rix,
   /sbin/ifconfig rix,
