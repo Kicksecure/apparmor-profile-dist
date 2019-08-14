@@ -160,7 +160,7 @@
   # new-style encrypted $HOME
   owner @{HOMEDIRS}/.ecryptfs/*/.Private/** mrixwlk,
 
-  ## {{ Anonymity Distribution specific additions start here
+  ## {{ Whonix, Kicksecure, uwt, security-misc additions start here
 
   @{HOME}/.whonix/* rwk,
 
@@ -229,4 +229,4 @@
   /var/lib/dbus/machine-id rwk,
   /var/lib/dbus/machine-id.* rwk,
 
-  ## }} Anonymity Distribution specific additions end here
+  ## }} Whonix, Kicksecure, uwt, security-misc specific additions end here
