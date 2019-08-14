@@ -1,3 +1,18 @@
+commit 362558402e375d22eeb3d50f7a6f1a03d97c6932
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 14 11:29:58 2019 +0000
+
+    fix, allow running /usr/lib/security-misc/permission-lockdown unconfined
+    
+    better than allowing all that /usr/lib/security-misc/permission-lockdown does
+    globally for all applications
+
+commit 1267afe32540db48bcdab12e4e685266bb759fcb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 14 11:12:39 2019 +0000
+
+    bumped changelog version
+
 commit 41f8858492c45cc859e5ca15cac845db89fe2ab1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Aug 14 11:09:28 2019 +0000
