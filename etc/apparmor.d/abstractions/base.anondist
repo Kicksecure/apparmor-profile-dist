@@ -233,6 +233,6 @@
   ## AppArmor feature request:
   ## allow adding permissions globally using drop-in .d folder
   ## https://gitlab.com/apparmor/apparmor/issues/50
-  /usr/lib/security-misc/permission-lockdown rix,
+  /usr/lib/security-misc/permission-lockdown rUx,
 
   ## }} Whonix, Kicksecure, uwt, security-misc specific additions end here
