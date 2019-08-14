@@ -1,3 +1,25 @@
+commit 41f8858492c45cc859e5ca15cac845db89fe2ab1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 14 11:09:28 2019 +0000
+
+    fix security-misc apparmor issue
+    
+    sudo[19806]: pam_exec(sudo:session): execve(/usr/lib/security-misc/permission-lockdown,...) failed: Permission denied
+    sudo[18961]: pam_exec(sudo:session): /usr/lib/security-misc/permission-lockdown failed: exit code 13
+    kernel: audit: type=1400 audit(1565780860.972:224): apparmor="DENIED" operation="exec" profile="/usr/bin/whonixcheck" name="/usr/lib/security-misc/permission-lockdown" pid=19806 comm="sudo" requested_mask="x" denied_mask="x" fsuid=0 ouid=0
+
+commit a9b521707dce5fce264088c131b1133597e31a1e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 14 11:04:53 2019 +0000
+
+    comment
+
+commit 116fb9b7312ffa2b1ee9e1a46c7f3eb0d71bcfc0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 1 11:24:43 2019 +0000
+
+    bumped changelog version
+
 commit bd249e73490c997cdaacb3957194d9ff30d4184c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 1 11:13:34 2019 +0000
