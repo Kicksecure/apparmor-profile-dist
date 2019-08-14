@@ -229,4 +229,10 @@
   /var/lib/dbus/machine-id rwk,
   /var/lib/dbus/machine-id.* rwk,
 
+  ## security-misc
+  ## AppArmor feature request:
+  ## allow adding permissions globally using drop-in .d folder
+  ## https://gitlab.com/apparmor/apparmor/issues/50
+  /usr/lib/security-misc/permission-lockdown rix,
+
   ## }} Whonix, Kicksecure, uwt, security-misc specific additions end here
