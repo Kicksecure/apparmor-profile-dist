@@ -1,3 +1,9 @@
+apparmor-profile-anondist (3:4.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 15 Aug 2019 15:15:47 +0000
+
 apparmor-profile-anondist (3:4.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
