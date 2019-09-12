@@ -7,6 +7,7 @@
 ## but because of a bug in AppArmor, this breaks reloading profiles
 ## so it is only enabled in live mode.
 
+set -x
 set -e
 
 if grep "boot=live" /proc/cmdline ; then
