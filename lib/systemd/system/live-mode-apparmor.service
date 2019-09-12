@@ -1,9 +1,14 @@
 [Unit]
 Description=Fix AppArmor for live mode
+DefaultDependencies=no
+Before=sysinit.target
+Before=apparmor.service
+After=local-fs.target
+After=systemd-journald-audit.socket
 
 [Service]
 Type=oneshot
 ExecStart=/usr/lib/live-mode-apparmor
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=sysinit.target
