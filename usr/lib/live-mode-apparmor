@@ -6,6 +6,7 @@
 ## AppArmor profiles in live mode need the following line to work
 ## but because of a bug in AppArmor, this breaks reloading profiles
 ## so it is only enabled in live mode.
+## https://forums.whonix.org/t/error-values-added-to-a-non-existing-variable-homedirs-rw-home-in-tunables-home-d-live-mode/8065
 ## https://forums.whonix.org/t/live-mode-etc-apparmor-d-tunables-home-d-live-mode-breaks-aa-enforce/5868
 
 set -x
