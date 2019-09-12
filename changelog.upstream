@@ -1,3 +1,167 @@
+commit e65f2de77cb10b34ad6d1f123facf5957eb13a1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 04:04:25 2019 -0400
+
+    Allow to disable this feature by using double hash ('##').
+
+commit fbc3dad6323373ee702a2e4c67da23af5b72e93b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 04:01:19 2019 -0400
+
+    add Documentation= to fix lintian warning
+
+commit 31bc5b18b389326a71156d4a8e2f7268a839bd67
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 04:00:12 2019 -0400
+
+    specify systemd unit ordering
+    
+    [Unit]
+    DefaultDependencies=no
+    Before=sysinit.target
+    Before=apparmor.service
+    After=local-fs.target
+    After=systemd-journald-audit.socket
+    
+    [Install]
+    WantedBy=sysinit.target
+
+commit 2992107c227d87b81d7b43423d3bd85641057842
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:56:31 2019 -0400
+
+    comment
+
+commit d97ed351787a0e562379e94d61b9f496eac4c003
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:56:10 2019 -0400
+
+    comment
+
+commit f4d08ca397ade2696d8abb3692790f94e87e74b8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:54:39 2019 -0400
+
+    comment
+
+commit fa51342df0f1ddb67e5811cb6803ea0fc88a0731
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:54:07 2019 -0400
+
+    comment
+
+commit 5b0db1e2a4dc381405ccd834b3eff3bfa01ce8d5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:53:36 2019 -0400
+
+    debugging
+
+commit e4092ebe14be436cdb2bc59536d451c2d8178ebe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:53:26 2019 -0400
+
+    comment
+
+commit d7e97fc3545f6c611ba2a0c2d02388797d5b720a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:51:33 2019 -0400
+
+    implement opposite action
+
+commit 17bb92c8e53d884ec38fdd730fa50c60921f87cf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:39:29 2019 -0400
+
+    comment
+
+commit 3107d8bd2c18e686529ab0399cec91019edd6148
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:37:57 2019 -0400
+
+    set -e
+
+commit e4ddd2353417dadae2bce63a4caaf9e9e6e904ac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:37:45 2019 -0400
+
+    minor
+
+commit 6bfa94fe87849261bc2b134ce62c9f05497cd8a6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:37:32 2019 -0400
+
+    copyright
+
+commit 9418bf7b8f3821777182b5bf084ac4ec0eadd707
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:36:22 2019 -0400
+
+    Depends: helper-scripts (provides str_replace)
+
+commit 5ab6ef22553a7621974dc4647807d12dc670ddb7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:36:01 2019 -0400
+
+    chmod +x usr/lib/live-mode-apparmor
+
+commit 1bcbfa5cb0c568bb4f92371f0af81838563f1eca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:35:44 2019 -0400
+
+    port to str_replace
+
+commit e12b7b4ed75adbb5ebd9d2fdd557b35d839eaa46
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:33:35 2019 -0400
+
+    remove space
+
+commit 3446fa82852ba567a99a9296f7333d0531b8e8c8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:32:48 2019 -0400
+
+    newline
+
+commit 6854a947535781156a07a293aab818e40ed27ef3
+Merge: 80370f4 4093614
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 03:32:21 2019 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 4093614eff455cc3c78d138c04c7b765ca6c6a5d
+Merge: 80370f4 a8c19b3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 07:31:43 2019 +0000
+
+    Merge pull request #2 from madaidan/patch-1
+    
+    Fix AppArmor when not in live mode
+
+commit a8c19b39d97a7fbb7c43f5ab803ae8142421213f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Sep 11 19:59:44 2019 +0000
+
+    Create live-mode-apparmor.service
+
+commit eabc1574d7c033ea51928e28bb38f6480e4d9a84
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Sep 11 19:57:54 2019 +0000
+
+    Create live-mode-apparmor
+
+commit afa4a479b311448bb3d61f36aa7a89f13be78a0a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Sep 11 19:56:30 2019 +0000
+
+    Comment out line as it causes errors with AppArmor
+
+commit 80370f492f4ba209020867fb0aa5952e27eb100b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 15 15:15:47 2019 +0000
+
+    bumped changelog version
+
 commit 75fa392c15f1576595acf72d99f599b2a0c4a4b9
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 15 13:38:41 2019 +0000
