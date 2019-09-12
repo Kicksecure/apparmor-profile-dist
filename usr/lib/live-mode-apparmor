@@ -8,6 +8,8 @@
 ## so it is only enabled in live mode.
 ## https://forums.whonix.org/t/error-values-added-to-a-non-existing-variable-homedirs-rw-home-in-tunables-home-d-live-mode/8065
 ## https://forums.whonix.org/t/live-mode-etc-apparmor-d-tunables-home-d-live-mode-breaks-aa-enforce/5868
+## https://bugs.launchpad.net/apparmor/+bug/1331856
+## https://bugs.launchpad.net/apparmor/+bug/1387775
 
 set -x
 set -e
