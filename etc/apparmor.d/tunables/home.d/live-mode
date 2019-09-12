@@ -3,6 +3,7 @@
 ## See the file COPYING for copying conditions.
 
 # @{HOMEDIRS}+=/rw/home/
+
 alias / -> /rw/,
 alias /var/lib/ -> /rw/var/lib/,
 alias /var/lib/tor/ -> /rw/var/lib/tor/,
