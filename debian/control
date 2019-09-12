@@ -13,7 +13,7 @@ Standards-Version: 4.3.0
 
 Package: apparmor-profile-anondist
 Architecture: all
-Depends: ${misc:Depends}
+Depends: helper-scripts, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
 Description: AppArmor Profile for Anonymity Linux Distributions
