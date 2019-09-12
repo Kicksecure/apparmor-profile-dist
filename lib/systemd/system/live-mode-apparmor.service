@@ -1,0 +1,9 @@
+[Unit]
+Description=Fix AppArmor for live mode
+
+[Service]
+Type=oneshot
+ExecStart=/usr/lib/live-mode-apparmor
+
+[Install]
+WantedBy=multi-user.target
