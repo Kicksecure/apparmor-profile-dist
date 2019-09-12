@@ -1,5 +1,6 @@
 [Unit]
 Description=Fix AppArmor for live mode
+Documentation=https://forums.whonix.org/t/live-mode-etc-apparmor-d-tunables-home-d-live-mode-breaks-aa-enforce/5868
 DefaultDependencies=no
 Before=sysinit.target
 Before=apparmor.service
