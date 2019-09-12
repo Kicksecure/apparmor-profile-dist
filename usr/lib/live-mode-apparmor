@@ -5,5 +5,5 @@
 ## so it is only enabled in live mode.
 
 if grep "boot=live" /proc/cmdline; then
-  sed -i 's/#@{HOMEDIRS}+=\/rw\/home/@{HOMEDIRS}+=\/rw\/home/' /etc/apparmor.d/tunables/home.d/live-mode
+   str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
 fi
