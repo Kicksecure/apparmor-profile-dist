@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Copyright (C) 2019 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
 ## AppArmor profiles in live mode need the following line to work
 ## but because of a bug in AppArmor, this breaks reloading profiles
 ## so it is only enabled in live mode.
