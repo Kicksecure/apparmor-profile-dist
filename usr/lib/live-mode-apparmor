@@ -12,6 +12,10 @@ set -e
 if grep "boot=live" /proc/cmdline ; then
    str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
 else
+   ## Idempotence.
+   ## grep to see if it is enabled (not commented out) before str_replace
+   ## adding a hash ('#') in front of it to avoid adding multiple hashes in
+   ## front of it.
    if grep "^@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
       str_replace "@{HOMEDIRS}+=/rw/home/" "#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
