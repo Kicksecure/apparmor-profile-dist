@@ -7,6 +7,6 @@
 ## but because of a bug in AppArmor, this breaks reloading profiles
 ## so it is only enabled in live mode.
 
-if grep "boot=live" /proc/cmdline; then
+if grep "boot=live" /proc/cmdline ; then
    str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
 fi
