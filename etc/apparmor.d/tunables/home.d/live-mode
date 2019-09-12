@@ -2,6 +2,10 @@
 ## Copyright (C) 2018 Algernon <33966997+Algernon-01@users.noreply.github.com>
 ## See the file COPYING for copying conditions.
 
+## The following line will get commented in (activated) in Live Mode,
+## i.e. when kernel boot parameter boot=live is set.
+## /lib/systemd/system/live-mode-apparmor.service
+## /usr/lib/live-mode-apparmor
 #@{HOMEDIRS}+=/rw/home/
 
 alias / -> /rw/,
