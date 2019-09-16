@@ -1,3 +1,16 @@
+commit 0eb2cfd8a8e9be3883b7cddbe9d6d1c781425302
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 16 11:58:50 2019 +0000
+
+    alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure,
+    alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure-orig,
+
+commit 85b290145722ed449f9fe38f248461b0f77de2b9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Sep 12 12:47:10 2019 +0000
+
+    bumped changelog version
+
 commit e65f2de77cb10b34ad6d1f123facf5957eb13a1c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 12 04:04:25 2019 -0400
