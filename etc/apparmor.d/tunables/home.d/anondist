@@ -57,6 +57,11 @@ alias /etc/resolv.conf -> /etc/resolv.conf.anondist,
 alias /etc/resolv.conf -> /etc/resolv.conf.anondist-orig,
 ## }}}
 
+## {{{ kicksecure-network-conf
+alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure,
+alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure-orig,
+## }}}
+
 ## {{{ timezone-utc
 
 alias /etc/timezone -> /etc/timezone.anondist,
