@@ -1,3 +1,59 @@
+commit 360a2c7b73d334d66736439c7765864244ee773a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 28 05:18:46 2019 -0400
+
+    Revert "Create usr.lib.security-misc.pam_tally2-info"
+    
+    This reverts commit e1ae033305c11d08d6e17c50c607adc08c3edac7.
+
+commit ecd3e9651af3371139e94ec08bbb319deaea08a4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 28 05:18:35 2019 -0400
+
+    Revert "Create usr.lib.security-misc.permission-lockdown"
+    
+    This reverts commit baf8ae99af005c6ea1cb09f4508413e3ff85b247.
+
+commit 3db26a8e2451ad071e6e27a1f4ab25d37489d76c
+Merge: da76948 9395f61
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 28 05:17:15 2019 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 9395f616f96b4c983f24d6f98bb0ae5805c2c443
+Merge: da76948 2070406
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 28 09:14:58 2019 +0000
+
+    Merge pull request #3 from madaidan/apparm
+    
+    Replace Ux rules in base abstraction
+
+commit 2070406b60bbbaff52095537a90b385eb0a33a3d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Oct 27 20:55:53 2019 +0000
+
+    Replace Ux rules
+
+commit e1ae033305c11d08d6e17c50c607adc08c3edac7
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Oct 27 20:54:03 2019 +0000
+
+    Create usr.lib.security-misc.pam_tally2-info
+
+commit baf8ae99af005c6ea1cb09f4508413e3ff85b247
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Oct 27 20:53:19 2019 +0000
+
+    Create usr.lib.security-misc.permission-lockdown
+
+commit da769484194b3bf83a82f98f29359e08319d9561
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Sep 16 13:32:43 2019 +0000
+
+    bumped changelog version
+
 commit 0eb2cfd8a8e9be3883b7cddbe9d6d1c781425302
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 16 11:58:50 2019 +0000
