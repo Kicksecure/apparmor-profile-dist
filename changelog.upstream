@@ -1,3 +1,20 @@
+commit a55417e067616f1cb5a1d64725f43c26b1a40de1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 8 01:23:44 2019 -0500
+
+    remove
+      /usr/lib/security-misc/permission-lockdown rpx,
+      /usr/lib/security-misc/pam_tally2-info rpx,
+    since already done in apparmor-profile-everything
+    
+    https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/174
+
+commit 4f7212ccf5c34febee9b18ed94472d51d6ef624d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:04:13 2019 +0000
+
+    bumped changelog version
+
 commit 360a2c7b73d334d66736439c7765864244ee773a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 28 05:18:46 2019 -0400
