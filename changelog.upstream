@@ -1,3 +1,38 @@
+commit 0ec077b6ae99ed08b6607ef9322de1986d256baa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 09:31:56 2020 -0500
+
+    /usr/lib/security-misc/pam-abort-on-locked-password rUx,
+
+commit a169daa3f9bd5fc0a54af6c483f55cea240f573a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 09:30:53 2020 -0500
+
+      /usr/lib/security-misc/pam_only_if_login rUx,
+      /etc/security/access-security-misc.conf r,
+
+commit 8945cebb5e986bb3bba70ba8f694e0b6f494f630
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 09:29:24 2020 -0500
+
+    Revert "Replace Ux rules"
+    
+    This reverts commit 2070406b60bbbaff52095537a90b385eb0a33a3d.
+
+commit 04d2be17aeef26b0bce0f7c74d76fb9367ce4771
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 09:26:45 2020 -0500
+
+    Revert "remove"
+    
+    This reverts commit a55417e067616f1cb5a1d64725f43c26b1a40de1.
+
+commit c9055150c75316925a8b0e835b8e1884f0c7c215
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 8 04:03:49 2019 -0500
+
+    bumped changelog version
+
 commit a55417e067616f1cb5a1d64725f43c26b1a40de1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Dec 8 01:23:44 2019 -0500
