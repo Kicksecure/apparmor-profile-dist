@@ -62,7 +62,7 @@ alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure,
 alias /etc/resolv.conf -> /etc/resolv.conf.kicksecure-orig,
 ## }}}
 
-## {{{ timezone-utc
+## {{{ anon-apps-config
 
 alias /etc/timezone -> /etc/timezone.anondist,
 alias /etc/timezone -> /etc/timezone.anondist-orig,
