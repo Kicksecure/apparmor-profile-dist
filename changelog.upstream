@@ -1,3 +1,27 @@
+commit 8c34639d727f3e626b8527d7ae3af41436db4f35
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:39:58 2020 +0000
+
+    copyright
+
+commit 1636b90761c1caa76cfe5e73125946efe58b33ba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:38:03 2020 +0000
+
+    /etc/resolv.conf.whonix
+
+commit cf7d7e827f4561aeddd275d6efbb78923d6f8c2e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:03:35 2020 +0000
+
+    anon-base-files -> dist-base-files
+
+commit 7603c47913c8bb5397bab0ac94c2a77a6f6c971e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 10:36:52 2020 +0000
+
+    bumped changelog version
+
 commit 6028de10c3dd823b6858569f6a750a71f6a11676
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Apr 6 20:04:52 2020 +0000
