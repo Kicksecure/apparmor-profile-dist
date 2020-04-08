@@ -162,8 +162,6 @@
 
   ## {{ Whonix, Kicksecure, uwt, security-misc additions start here
 
-  @{HOME}/.whonix/* rwk,
-
   /etc/whonix.d/ r,
   /etc/whonix.d/* r,
 
