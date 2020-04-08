@@ -1,21 +1,22 @@
 ## Copyright (C) 2012 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-Source: apparmor-profile-anondist
+Source: apparmor-profile-dist
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
 Build-Depends: debhelper (>= 12), dh-apparmor, config-package-dev
 Homepage: https://www.whonix.org/wiki/AppArmor
-Vcs-Browser: https://github.com/Whonix/apparmor-profile-anondist
-Vcs-Git: https://github.com/Whonix/apparmor-profile-anondist.git
+Vcs-Browser: https://github.com/Whonix/apparmor-profile-dist
+Vcs-Git: https://github.com/Whonix/apparmor-profile-dist.git
 Standards-Version: 4.3.0
 
-Package: apparmor-profile-anondist
+Package: apparmor-profile-dist
 Architecture: all
 Depends: helper-scripts, ${misc:Depends}
 Provides: ${diverted-files}
 Conflicts: ${diverted-files}
+Replaces: apparmor-profile-anondist
 Description: AppArmor Profile for Anonymity Linux Distributions
  Displaces /etc/apparmor.d/abstractions/base with a version, that includes
  additions required for Anonymity Linux Distributions.

@@ -6,7 +6,7 @@ additions required for Anonymity Linux Distributions.
 Does not depend on AppArmor, so this package can be installed by default on
 any anonymity distribution by default, without requiring to also have AppArmor
 installed. Just for the case, AppArmor gets installed later by the user.
-## How to install `apparmor-profile-anondist` using apt-get ##
+## How to install `apparmor-profile-dist` using apt-get ##
 
 1\. Download [Whonix's Signing Key]().
 
@@ -34,10 +34,10 @@ echo "deb https://deb.whonix.org buster main contrib non-free" | sudo tee /etc/a
 sudo apt-get update
 ```
 
-5\. Install `apparmor-profile-anondist`.
+5\. Install `apparmor-profile-dist`.
 
 ```
-sudo apt-get install apparmor-profile-anondist
+sudo apt-get install apparmor-profile-dist
 ```
 
 ## How to Build deb Package from Source Code ##
@@ -48,7 +48,7 @@ Can be build using standard Debian package build tools such as:
 dpkg-buildpackage -b
 ```
 
-See [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-anondist). (Replace `package-name` with the actual name of this package.)
+See [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-dist). (Replace `package-name` with the actual name of this package.)
 
 ## Contact ##
 
@@ -57,4 +57,4 @@ See [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-
 
 ## Donate ##
 
-`apparmor-profile-anondist` requires [donations](https://www.whonix.org/wiki/Donate) to stay alive!
+`apparmor-profile-dist` requires [donations](https://www.whonix.org/wiki/Donate) to stay alive!
