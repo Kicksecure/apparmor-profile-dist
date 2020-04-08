@@ -47,7 +47,7 @@ alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist-orig,
 
 ## }}}
 
-## {{{ anon-base-files
+## {{{ dist-base-files
 alias /etc/hosts -> /etc/hosts.anondist,
 alias /etc/hosts -> /etc/hosts.anondist-orig,
 ## }}}
