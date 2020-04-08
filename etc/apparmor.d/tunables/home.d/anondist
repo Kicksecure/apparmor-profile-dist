@@ -53,8 +53,14 @@ alias /etc/hosts -> /etc/hosts.anondist-orig,
 ## }}}
 
 ## {{{ anon-[gw|ws]-dns-conf
+## Legacy.
 alias /etc/resolv.conf -> /etc/resolv.conf.anondist,
 alias /etc/resolv.conf -> /etc/resolv.conf.anondist-orig,
+## }}}
+
+## {{{ whonix-[gw|ws]-network-conf
+alias /etc/resolv.conf -> /etc/resolv.conf.whonix,
+alias /etc/resolv.conf -> /etc/resolv.conf.whonix-orig,
 ## }}}
 
 ## {{{ kicksecure-network-conf
