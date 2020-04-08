@@ -1,3 +1,15 @@
+commit f05e419fb1d6b1e0c2a1ef3fbb0f8a0ef83ad052
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:48:26 2020 +0000
+
+    cleanup `@{HOME}/.whonix/* rwk,` - no longer in use
+
+commit 5262552295b94361ea49a1a46a379d9191365a7a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:40:15 2020 +0000
+
+    bumped changelog version
+
 commit 8c34639d727f3e626b8527d7ae3af41436db4f35
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 12:39:58 2020 +0000
