@@ -1,3 +1,15 @@
+commit 18e52595f72e13182672205b4ac751a2dfbb6b60
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 17:23:06 2020 +0000
+
+    apparmor-profile-anondist -> apparmor-profile-dist
+
+commit c9686b735a889c4a5efb5b35bc14fd5da905631a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 17:11:26 2020 +0000
+
+    bumped changelog version
+
 commit f98f658e3b0e04072ad0544b435f5701b2acbd94
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 16:55:47 2020 +0000
