@@ -1,3 +1,17 @@
+commit 9a3716ac73e491198255a42c9114b3b6e5b0d2af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 15 05:56:06 2020 -0400
+
+    refactoring
+    
+    https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/388
+
+commit 4863375bed86ab278d13d030012aff313d3a113c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 17:24:36 2020 +0000
+
+    bumped changelog version
+
 commit 18e52595f72e13182672205b4ac751a2dfbb6b60
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 17:23:06 2020 +0000
