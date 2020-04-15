@@ -173,16 +173,10 @@
   /etc/dpkg/origins/whonix r,
 
   ## uwt
-  /bin/mkdir rix,
-  /bin/readlink rix,
-  /bin/bash rix,
-  /bin/grep rix,
-
-  ## uwt
-  /usr/bin/mkdir rix,
-  /usr/bin/readlink rix,
-  /usr/bin/bash rix,
-  /usr/bin/grep rix,
+  /{,usr/}bin/mkdir rix,
+  /{,usr/}bin/readlink rix,
+  /{,usr/}bin/bash rix,
+  /{,usr/}bin/grep rix,
 
   ## uwt
   /usr/bin/whoami rix,
