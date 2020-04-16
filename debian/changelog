@@ -1,3 +1,9 @@
+apparmor-profile-dist (3:6.1-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 16 Apr 2020 12:23:08 +0000
+
 apparmor-profile-dist (3:6.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
