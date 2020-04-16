@@ -1,3 +1,15 @@
+commit 559f15babdecebbf76f0ca6c466e74bd11375aa8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 16 12:02:18 2020 -0400
+
+    /var/lib/dist-base-files/build_version
+
+commit 7ee5226a217f3ada7fa1f33770040743ac37d839
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 16 08:23:08 2020 -0400
+
+    bumped changelog version
+
 commit c52c6706894a71e65ba0160e2f8c754598b40c2c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 15 14:05:27 2020 -0400
