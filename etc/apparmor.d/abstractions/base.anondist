@@ -212,7 +212,10 @@
   /usr/share/open-link-confirmation/share/config/kdeglobals r,
   /usr/share/anon-*/** r,
 
+  ## Legacy.
   /var/lib/anon-dist/build_version r,
+
+  /var/lib/dist-base-files/build_version r,
 
   ## Qubes specific
   /usr/bin/dbus-launch rix,
