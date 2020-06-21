@@ -234,4 +234,9 @@
   /usr/lib/security-misc/pam_only_if_login rUx,
   /etc/security/access-security-misc.conf r,
 
+  ## snoopy
+  /etc/snoopy.ini r,
+  /etc/snoopy.ini.dist r,
+  /etc/snoopy.ini.dist-orig r,
+
   ## }} Whonix, Kicksecure, uwt, security-misc specific additions end here
