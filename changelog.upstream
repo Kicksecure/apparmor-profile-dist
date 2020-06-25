@@ -1,3 +1,15 @@
+commit 72c257ecb798a7fc4fb3664ccbe74e9409545724
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 21 17:23:22 2020 -0400
+
+    apparmor snoopy
+
+commit 09adf80ec813f288707b6918f1c4eba0d76681bd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 16 16:59:59 2020 -0400
+
+    bumped changelog version
+
 commit 559f15babdecebbf76f0ca6c466e74bd11375aa8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 16 12:02:18 2020 -0400
