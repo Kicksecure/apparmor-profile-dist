@@ -48,8 +48,16 @@ alias /usr/bin/ricochet -> /usr/bin/ricochet.anondist-orig,
 ## }}}
 
 ## {{{ dist-base-files
+## legacy
 alias /etc/hosts -> /etc/hosts.anondist,
 alias /etc/hosts -> /etc/hosts.anondist-orig,
+alias /etc/hostname -> /etc/hostname.anondist,
+alias /etc/hostname -> /etc/hostname.anondist-orig,
+
+alias /etc/hosts -> /etc/hosts.whonix,
+alias /etc/hosts -> /etc/hosts.whonix-orig,
+alias /etc/hostname -> /etc/hostname.whonix,
+alias /etc/hostname -> /etc/hostname.whonix-orig,
 ## }}}
 
 ## {{{ anon-[gw|ws]-dns-conf
