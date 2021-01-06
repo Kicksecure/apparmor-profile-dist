@@ -8,7 +8,7 @@ any anonymity distribution by default, without requiring to also have AppArmor
 installed. Just for the case, AppArmor gets installed later by the user.
 ## How to install `apparmor-profile-dist` using apt-get ##
 
-1\. Download [Whonix's Signing Key]().
+1\. Download Whonix's Signing Key.
 
 ```
 wget https://www.whonix.org/patrick.asc
