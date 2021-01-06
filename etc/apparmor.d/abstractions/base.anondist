@@ -193,8 +193,8 @@
   /usr/lib/open_link_confirmation rix,
   /var/lib/whonix/whonixblog/ r,
 
-  /usr/lib/helper-scripts/anondate rix,
-  /usr/lib/helper-scripts/anondate-tester rix,
+  /usr/sbin/anondate rix,
+  /usr/sbin/anondate-tester rix,
   /usr/lib/helper-scripts/apt-get-update-kill-helper rix,
   /usr/lib/helper-scripts/apt-get-update-simulate rix,
   /usr/lib/helper-scripts/pkg_manager_running_check rix,
