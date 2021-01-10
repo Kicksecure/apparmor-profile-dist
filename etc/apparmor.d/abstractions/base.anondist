@@ -198,7 +198,7 @@
   /usr/lib/helper-scripts/apt-get-update-kill-helper rix,
   /usr/lib/helper-scripts/apt-get-update-simulate rix,
   /usr/lib/helper-scripts/pkg_manager_running_check rix,
-  /usr/lib/helper-scripts/te_pe_tb_check rix,
+  /usr/lib/helper-scripts/onion-time-pre-script rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.bsh rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.py rix,
   /usr/lib/helper-scripts/tor_circuit_established_check.py rix,
