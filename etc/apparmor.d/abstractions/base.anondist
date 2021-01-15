@@ -201,7 +201,7 @@
   /usr/lib/helper-scripts/onion-time-pre-script rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.bsh rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.py rix,
-  /usr/bin/tor-circuit-established-check rix,
+  /usr/bin/tor-circuit-established-check rCx,
   /usr/lib/helper-scripts/tor_enabled_check rix,
   /usr/lib/helper-scripts/tor_signal_newnym.py rix,
   /usr/lib/helper-scripts/torsocks-remove-ld-preload rix,
