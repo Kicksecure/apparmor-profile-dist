@@ -201,7 +201,15 @@
   /usr/lib/helper-scripts/onion-time-pre-script rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.bsh rix,
   /usr/lib/helper-scripts/tor_bootstrap_check.py rix,
-  /usr/bin/tor-circuit-established-check rPx,
+
+  ## Cannot use:
+  ## rPx
+  ##
+  ## AVC apparmor="DENIED" operation="exec" info="no new privs" error=-1 profile="/usr/lib/systemcheck/census" name="/usr/bin/tor-circuit-established-check"
+  ## Might be fixed in later kernel version.
+  ## https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1844186
+  /usr/bin/tor-circuit-established-check rix,
+
   /usr/lib/helper-scripts/tor_enabled_check rix,
   /usr/lib/helper-scripts/tor_signal_newnym.py rix,
   /usr/lib/helper-scripts/torsocks-remove-ld-preload rix,
