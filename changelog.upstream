@@ -1,3 +1,41 @@
+commit 7be8d67f840ca4a07312f508f3d27226e53b1cbe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 15 01:44:35 2021 -0500
+
+    Cannot use: `rPx`
+    
+    AVC apparmor="DENIED" operation="exec" info="no new privs" error=-1 profile="/usr/lib/systemcheck/census" name="/usr/bin/tor-circuit-established-check"
+    
+    Might be fixed in later kernel version.
+    
+    https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1844186
+    
+    `/usr/bin/tor-circuit-established-check rix,`
+
+commit ae64881b9f6e3b0590dcc0a153dfe4e387f9ca60
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 15 01:12:33 2021 -0500
+
+    fix, rCx -> rPx
+
+commit 0dd19aeacc0123b154caaa7ebeecf933ea7c775c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 15 01:01:29 2021 -0500
+
+    `/usr/bin/tor-circuit-established-check rix,` -> `rCx`
+
+commit 92326a078e7042200b707867e291fa9279a37886
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 15 00:38:33 2021 -0500
+
+    update path
+
+commit 4e773d4c9454a646183834b76d7c7dc0782ddc4d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 10 23:15:21 2021 -0500
+
+    bumped changelog version
+
 commit 4ba741d5d5233572e085e3c54f7e81eb4215a534
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 10 03:32:11 2021 -0500
