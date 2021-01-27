@@ -6,6 +6,10 @@
 alias /usr/bin/apt-get -> /usr/bin/apt-get.anondist,
 alias /usr/bin/apt-get -> /usr/bin/apt-get.anondist-orig,
 
+## XXX: Can this be made to work?
+#alias /{,usr/}bin/curl -> /{,usr/}bin/apt-get.anondist,
+#alias /{,usr/}bin/apt-get -> /{,usr/}bin/apt-get.anondist-orig,
+
 alias /usr/bin/aptitude -> /usr/bin/aptitude.anondist,
 alias /usr/bin/aptitude -> /usr/bin/aptitude.anondist-orig,
 
