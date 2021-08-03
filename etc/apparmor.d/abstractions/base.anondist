@@ -195,12 +195,12 @@
 
   /usr/sbin/anondate rix,
   /usr/sbin/anondate-tester rix,
-  /usr/lib/helper-scripts/apt-get-update-kill-helper rix,
-  /usr/lib/helper-scripts/apt-get-update-simulate rix,
-  /usr/lib/helper-scripts/pkg_manager_running_check rix,
-  /usr/lib/helper-scripts/onion-time-pre-script rix,
-  /usr/lib/helper-scripts/tor_bootstrap_check.bsh rix,
-  /usr/lib/helper-scripts/tor_bootstrap_check.py rix,
+  /usr/libexec/helper-scripts/apt-get-update-kill-helper rix,
+  /usr/libexec/helper-scripts/apt-get-update-simulate rix,
+  /usr/libexec/helper-scripts/pkg_manager_running_check rix,
+  /usr/libexec/helper-scripts/onion-time-pre-script rix,
+  /usr/libexec/helper-scripts/tor_bootstrap_check.bsh rix,
+  /usr/libexec/helper-scripts/tor_bootstrap_check.py rix,
 
   ## Cannot use:
   ## rPx
@@ -210,9 +210,9 @@
   ## https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1844186
   /usr/bin/tor-circuit-established-check rix,
 
-  /usr/lib/helper-scripts/tor_enabled_check rix,
-  /usr/lib/helper-scripts/tor_signal_newnym.py rix,
-  /usr/lib/helper-scripts/torsocks-remove-ld-preload rix,
+  /usr/libexec/helper-scripts/tor_enabled_check rix,
+  /usr/libexec/helper-scripts/tor_signal_newnym.py rix,
+  /usr/libexec/helper-scripts/torsocks-remove-ld-preload rix,
 
   /usr/share/kde-lowfat/share/config/kdeglobals r,
   /usr/share/kde-mouse-doubleclick/share/config/kdeglobals r,

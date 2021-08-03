@@ -90,7 +90,7 @@ alias /etc/localtime -> /etc/localtime.anondist-orig,
 
 ## }}}
 
-## {{{ helper-scripts /usr/lib/helper-scripts/onion-time-pre-script
+## {{{ helper-scripts /usr/libexec/helper-scripts/onion-time-pre-script
 
 alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist,
 alias /usr/share/tor/tor-service-defaults-torrc -> /usr/share/tor/tor-service-defaults-torrc.anondist-orig,
