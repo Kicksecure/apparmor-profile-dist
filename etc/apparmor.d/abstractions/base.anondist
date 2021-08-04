@@ -187,8 +187,8 @@
   /dev/tty rw,
   @{PROC}/[0-9]*/net/ r,
   @{PROC}/[0-9]*/net/** r,
-  /usr/lib/uwtexec rix,
-  /usr/lib/uwtwrapper rix,
+  /usr/libexec/uwt/uwtexec rix,
+  /usr/libexec/uwt/uwtwrapper rix,
 
   /usr/libexec/open-link-confirmation/open-link-confirmation rix,
 
