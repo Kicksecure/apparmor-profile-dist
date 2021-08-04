@@ -12,7 +12,7 @@ After=systemd-journald-audit.socket
 
 [Service]
 Type=oneshot
-ExecStart=/usr/lib/live-mode-apparmor
+ExecStart=/usr/libexec/live-mode-apparmor
 
 [Install]
 WantedBy=sysinit.target

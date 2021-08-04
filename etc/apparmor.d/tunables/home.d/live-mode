@@ -5,7 +5,7 @@
 ## The following line will get commented in (activated) in Live Mode,
 ## i.e. when kernel boot parameter boot=live is set.
 ## /lib/systemd/system/live-mode-apparmor.service
-## /usr/lib/live-mode-apparmor
+## /usr/libexec/live-mode-apparmor
 #@{HOMEDIRS}+=/rw/home/
 
 alias / -> /rw/,
