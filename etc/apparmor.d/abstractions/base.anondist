@@ -190,7 +190,7 @@
   /usr/lib/uwtexec rix,
   /usr/lib/uwtwrapper rix,
 
-  /usr/lib/open_link_confirmation rix,
+  /usr/libexec/open-link-confirmation/open-link-confirmation rix,
   /var/lib/whonix/whonixblog/ r,
 
   /usr/sbin/anondate rix,
