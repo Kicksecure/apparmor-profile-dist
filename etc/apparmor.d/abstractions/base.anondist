@@ -191,7 +191,6 @@
   /usr/lib/uwtwrapper rix,
 
   /usr/libexec/open-link-confirmation/open-link-confirmation rix,
-  /var/lib/whonix/whonixblog/ r,
 
   /usr/sbin/anondate rix,
   /usr/sbin/anondate-tester rix,
