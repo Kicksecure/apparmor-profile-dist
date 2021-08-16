@@ -1,3 +1,15 @@
+commit 4554d97de8cbc126b11fc8504739bd138a8f1922
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 15:36:20 2021 -0400
+
+    /etc/security/faillock.conf r,
+
+commit bb4a8ceb900abcd16fcdcbf5445290f2ee82f1e8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Aug 5 16:32:11 2021 -0400
+
+    bumped changelog version
+
 commit 8941fe324f73a8fe8f0f2b059f2bda135490120b
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Aug 4 14:56:10 2021 -0400
