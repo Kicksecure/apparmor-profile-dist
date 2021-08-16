@@ -235,10 +235,11 @@
   ## AppArmor feature request:
   ## allow adding permissions globally using drop-in .d folder
   ## https://gitlab.com/apparmor/apparmor/issues/50
-  /usr/libexec/security-misc/pam-abort-on-locked-password rUx,
   /usr/libexec/security-misc/permission-lockdown rUx,
-  /usr/libexec/security-misc/pam_tally2-info rUx,
+  /usr/libexec/security-misc/pam-abort-on-locked-password rUx,
+  /usr/libexec/security-misc/pam-info rUx,
   /usr/libexec/security-misc/pam_only_if_login rUx,
+  /usr/libexec/security-misc/pam_faillock_not_if_x rUx,
   /etc/security/ r,
   /etc/security/access-security-misc.conf r,
   /etc/security/faillock.conf r,
