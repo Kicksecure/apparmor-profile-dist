@@ -239,6 +239,7 @@
   /usr/libexec/security-misc/permission-lockdown rUx,
   /usr/libexec/security-misc/pam_tally2-info rUx,
   /usr/libexec/security-misc/pam_only_if_login rUx,
+  /etc/security/ r,
   /etc/security/access-security-misc.conf r,
   /etc/security/faillock.conf r,
   /etc/security/faillock.conf.security-misc r,
