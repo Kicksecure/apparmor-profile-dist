@@ -1,3 +1,9 @@
+apparmor-profile-dist (3:7.3-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 17 Aug 2021 16:39:11 +0000
+
 apparmor-profile-dist (3:7.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
