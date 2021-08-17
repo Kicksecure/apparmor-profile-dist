@@ -245,9 +245,9 @@
   /etc/security/faillock.conf r,
   /etc/security/faillock.conf.security-misc r,
   /etc/security/faillock.conf.security-misc-orig r,
-  #AVC apparmor="DENIED" operation="open" profile="/usr/bin/systemcheck" name="/run/faillock/user" comm="sudo" requested_mask="wr" denied_mask="wr"
-  #AVC apparmor="DENIED" operation="open" profile="/usr/bin/systemcheck" name="/run/faillock/user" comm="sudo" requested_mask="wrc" denied_mask="wrc"
-  #AVC apparmor="DENIED" operation="mknod" profile="/usr/bin/systemcheck" name="/run/faillock/systemcheck" comm="sudo" requested_mask="c" denied_mask="c"
+  ## AVC apparmor="DENIED" operation="open" profile="/usr/bin/systemcheck" name="/run/faillock/user" comm="sudo" requested_mask="wr" denied_mask="wr"
+  ## AVC apparmor="DENIED" operation="open" profile="/usr/bin/systemcheck" name="/run/faillock/user" comm="sudo" requested_mask="wrc" denied_mask="wrc"
+  ## AVC apparmor="DENIED" operation="mknod" profile="/usr/bin/systemcheck" name="/run/faillock/systemcheck" comm="sudo" requested_mask="c" denied_mask="c"
   /run/faillock/** rwc,
 
   ## snoopy
