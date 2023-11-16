@@ -1,3 +1,37 @@
+commit fb69ff88698191b2738226b8ee54e7d74e86ac00
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Nov 15 20:39:03 2023 -0500
+
+    rm_conffile /etc/apparmor.d/abstractions/base.anondist
+
+commit f1010c621cfb31e5454afa95c0f44ea3a60bb66f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Nov 15 20:34:24 2023 -0500
+
+    port to /etc/apparmor.d/abstractions/base.d part 2
+    
+    https://phabricator.whonix.org/T927
+
+commit 41e1c82ea56b9f3e55f6f325c863bb6fbc92803a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Nov 15 20:31:32 2023 -0500
+
+    description
+
+commit f821373a712deb312041946d50be3769d9aa9b19
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Nov 15 20:30:37 2023 -0500
+
+    port to /etc/apparmor.d/abstractions/base.d
+    
+    https://phabricator.whonix.org/T927
+
+commit 666e2c15bdff6cbd74f7f6ad6b5dea98f0399c65
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Nov 11 20:11:44 2023 +0000
+
+    bumped changelog version
+
 commit da9f3843f8247fcebf12b4788c2ba5984e85ecbd
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:28 2023 -0500
