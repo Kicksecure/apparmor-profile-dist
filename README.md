@@ -1,7 +1,7 @@
-# AppArmor Profile for Anonymity Linux Distributions #
+# AppArmor Profile for Derivative Linux Distributions #
 
 Displaces /etc/apparmor.d/abstractions/base with a version, that includes
-additions required for Anonymity Linux Distributions.
+additions required for Derivative Linux Distributions.
 
 Does not depend on AppArmor, so this package can be installed by default on
 any anonymity distribution by default, without requiring to also have AppArmor
