@@ -5,7 +5,7 @@ Source: apparmor-profile-dist
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@kicksecure.com>
-Build-Depends: debhelper (>= 13), debhelper-compat (= 13), dh-apparmor, config-package-dev
+Build-Depends: debhelper (>= 13.11.6), debhelper-compat (= 13), dh-apparmor, config-package-dev
 Homepage: https://www.kicksecure.com/wiki/Apparmor-profile-everything
 Vcs-Browser: https://github.com/Kicksecure/apparmor-profile-dist
 Vcs-Git: https://github.com/Kicksecure/apparmor-profile-dist.git
