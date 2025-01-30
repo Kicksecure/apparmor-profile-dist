@@ -20,7 +20,7 @@ if grep "boot=live" /proc/cmdline ; then
    ## Idempotence.
    ## Allow to disable this feature by using double hash ('##').
    if grep "^#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
-      LANG=C str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
+      str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
 else
    ## Persistent Mode.
@@ -30,6 +30,6 @@ else
    ## adding a hash ('#') in front of it to avoid adding multiple hashes in
    ## front of it.
    if grep "^@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
-      LANG=C str_replace "@{HOMEDIRS}+=/rw/home/" "#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
+      str_replace "@{HOMEDIRS}+=/rw/home/" "#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
 fi
