@@ -14,6 +14,8 @@
 set -x
 set -e
 
+true "$0: START"
+
 if grep "boot=live" /proc/cmdline ; then
    ## Live Mode.
 
@@ -33,3 +35,5 @@ else
       str_replace "@{HOMEDIRS}+=/rw/home/" "#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
 fi
+
+true "$0: END"
