@@ -16,7 +16,9 @@ set -e
 
 true "$0: START"
 
-if grep "boot=live" /proc/cmdline ; then
+source /usr/libexec/helper-scripts/live-mode.sh
+
+if [ "$live_status_detected" = 'true' ]; then
    ## Live Mode.
 
    ## Idempotence.
