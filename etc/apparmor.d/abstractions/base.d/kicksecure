@@ -11,7 +11,11 @@
 
   /etc/timezone.anondist r,
 
+  /etc/dpkg/origins/kicksecure r,
   /etc/dpkg/origins/whonix r,
+
+  /etc/resolv.conf.kicksecure r,
+  /etc/resolv.conf.whonix r,
 
   ## uwt
   /{,usr/}bin/mkdir rix,
