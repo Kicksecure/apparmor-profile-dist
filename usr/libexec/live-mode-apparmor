@@ -11,7 +11,7 @@
 ## https://bugs.launchpad.net/apparmor/+bug/1331856
 ## https://bugs.launchpad.net/apparmor/+bug/1387775
 
-set -x
+#set -x
 set -e
 
 true "$0: START"
