@@ -23,7 +23,7 @@ if [ "$live_status_detected" = 'true' ]; then
 
    ## Idempotence.
    ## Allow to disable this feature by using double hash ('##').
-   if grep "^#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
+   if grep --quiet -- "^#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
       str_replace "#@{HOMEDIRS}+=/rw/home/" "@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
 else
@@ -33,7 +33,7 @@ else
    ## grep to see if it is enabled (not commented out) before str_replace
    ## adding a hash ('#') in front of it to avoid adding multiple hashes in
    ## front of it.
-   if grep "^@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
+   if grep --quiet -- "^@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode ; then
       str_replace "@{HOMEDIRS}+=/rw/home/" "#@{HOMEDIRS}+=/rw/home/" /etc/apparmor.d/tunables/home.d/live-mode
    fi
 fi
