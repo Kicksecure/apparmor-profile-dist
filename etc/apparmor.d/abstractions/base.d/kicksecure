@@ -52,7 +52,7 @@
   /usr/bin/tor-circuit-established-check rix,
 
   /usr/libexec/helper-scripts/tor_enabled_check rix,
-  /usr/libexec/helper-scripts/tor_signal_newnym.py rix,
+  /usr/bin/tor-signal-newnym rix,
   /usr/libexec/helper-scripts/torsocks-remove-ld-preload rix,
 
   /usr/share/kde-lowfat/share/config/kdeglobals r,
