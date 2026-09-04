@@ -11,14 +11,24 @@
 ## https://bugs.launchpad.net/apparmor/+bug/1331856
 ## https://bugs.launchpad.net/apparmor/+bug/1387775
 
-#set -x
-set -e
+set -o errexit
+set -o nounset
+set -o pipefail
+set -o errtrace
+shopt -s inherit_errexit
+shopt -s shift_verbose
+export LC_ALL=C
 
 true "$0: START"
 
-source /usr/libexec/helper-scripts/live-mode.sh
+## sets: live_status_detected
+# shellcheck source=../../../helper-scripts/usr/libexec/helper-scripts/live-mode.sh
+source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/live-mode.sh
 
-if [ "$live_status_detected" = 'true' ]; then
+## Assigned by the sourced live-mode.sh above.
+# shellcheck disable=SC2154
+
+if [ "${live_status_detected}" = 'true' ]; then
    ## Live Mode.
 
    ## Idempotence.

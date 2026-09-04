@@ -1,3 +1,123 @@
+commit 92c10021cb390e78d79163a991c0718b5dcddf0d
+Merge: f9f83bc 6b15036
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Aug 22 22:37:43 2026 -0400
+
+    Merge remote-tracking branch 'refs/remotes/org-ai-assisted/ai'
+
+commit f9f83bc13e4c39d8182330210c62238582663e47
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Aug 21 08:50:54 2026 +0000
+
+    bumped changelog version
+
+commit 6b15036dcfcb61190c02a2a5f8f316a8bce1cb95
+Author: claude (dev272 e8b76afb-795c-4739-8ebd-023de854021e) <noreply@anthropic.com>
+Date:   Fri Aug 21 04:23:30 2026 -0400
+
+    apparmor-profile-dist: source live-mode.sh via HELPER_SCRIPTS_PATH, drop SC1091 disable
+
+    - live-mode-apparmor: use source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/live-mode.sh;
+      drop the dead '# shellcheck disable=SC1091' and the stale sibling note.
+    - .github/dm-consumer.yml: dist-ai-tests: helper-scripts: true, so the
+      pre-push-static gate checks out helper-scripts as the repo sibling and
+      shellcheck FOLLOWS the source. See the shellcheck skill.
+
+    Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
+commit d820a4b02e4dad862f97f1adb8f556fef5c5f37c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 19 00:07:06 2026 -0400
+
+    fix
+
+commit 4db6aec3e864f8120395cb5b475311f451a2d023
+Merge: c4f7632 dbd852c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 19 00:05:32 2026 -0400
+
+    Merge remote-tracking branch 'refs/remotes/org-ai-assisted/ai'
+
+commit dbd852c9b7613a52b2d3ecb352fe2ca822653369
+Author: claude (dev163 38f9745c-aed1-4fb4-b6ae-9899f20f8de2) <noreply@anthropic.com>
+Date:   Sat Aug 8 04:55:21 2026 -0400
+
+    CI: enrol in the pre-push static gate
+
+    This repo had no GitHub Actions workflow at all, so nothing verified its PRs on
+    the server side -- the only gate was ci-repro run locally.
+
+    The workflow file is the canonical consumer template, copied verbatim from
+    developer-meta-files/consumer-templates/.github/workflows/. It is managed: once
+    present, dm-packaging-helper-script's pkg_update_consumer_workflows keeps it in
+    sync, so it must not be hand-edited here.
+
+    Enrolment is deliberately a SEPARATE act from propagation: that function uses
+    pkg_update_if_exists, which only updates a workflow that already exists, and
+    pkg_install_dependabot_yml skips any repo with no .github/workflows/ directory.
+    Neither creates the first one. Hence this commit.
+
+    Scope: the repos this session actually changed and that ship shell code -- not
+    every repo lacking CI. Enrolling a repo consumes shared org-wide Actions
+    concurrency (20 jobs, the real limit; public repos are not minute-billed), so it
+    is worth spending where there is signal.
+
+    Verified BEFORE enrolling: 'ci-repro.sh --worktree' passes for this repo, so the
+    gate arrives green rather than turning someone's PR red on arrival.
+
+    NOTE, so it is not a surprise: creating .github/workflows/ makes this repo
+    eligible for the canonical .github/dependabot.yml on the next propagation pass,
+    which pkg_install_dependabot_yml installs into any repo that uses Actions.
+
+commit 5aa3781dc08e57229245b178b8eca8ff6c9f47b8
+Author: claude (dev163 38f9745c-aed1-4fb4-b6ae-9899f20f8de2) <noreply@anthropic.com>
+Date:   Fri Aug 7 13:26:59 2026 -0400
+
+    apparmor-profile-dist: R-010 strict mode for live-mode-apparmor
+
+    The script toggles one line in /etc/apparmor.d/tunables/home.d/live-mode
+    depending on live versus persistent mode.
+
+    The behaviour change is deliberate and is the SAFE direction
+    ---------------------------------------------------------------
+
+    live_status_detected comes from the sourced live-mode.sh. If that file does not
+    set it -- absent, truncated, a helper-scripts version skew -- the old code
+    silently took the ELSE branch and DISABLED the live-mode tunable. On a live
+    boot that is the wrong AppArmor configuration, applied quietly. Under nounset
+    it now aborts and the tunable is left exactly as it was.
+
+    '${live_status_detected:-false}' was deliberately NOT used. That is the obvious
+    way to make the abort go away, and it reinstates the bug: an undetermined mode
+    would again be treated as persistent. The canary below is exactly that change.
+
+    Also: the '## double hash' opt-out documented in the script is preserved -- the
+    greps are anchored to a single '#', so an administrator who commented the line
+    out twice is untouched by either branch.
+
+    Testing
+    -------
+
+    Gate exit 0 in an ISOLATED checkout.
+
+    New harness at ~/strict-pass-tests/apd-test/. It compares the RESULTING FILE,
+    not just the exit code -- the tunable IS this script's output, and an exit code
+    cannot show a wrong AppArmor configuration. Eight cases: both modes crossed
+    with the tunable enabled, disabled and double-hashed, plus a missing tunable
+    file and a live-mode.sh that sets nothing.
+
+      8 same, 0 differing
+
+    Canary: replacing the read with '${live_status_detected:-false}' gives
+    7 same, 1 differing -- the fail-closed case reports a zero exit with the
+    tunable silently flipped to disabled.
+
+commit c4f7632db951fae61ab567d77c04ef8d90604e12
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed May 20 21:55:46 2026 +0000
+
+    bumped changelog version
+
 commit 32100dcc9f2ec04214b06c3849a396612ead3cb7
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed May 20 16:56:36 2026 -0400
