@@ -27,7 +27,6 @@ source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/live-mode.sh
 
 ## Assigned by the sourced live-mode.sh above.
 # shellcheck disable=SC2154
-
 if [ "${live_status_detected}" = 'true' ]; then
    ## Live Mode.
 
